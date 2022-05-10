@@ -44,3 +44,13 @@ if (btnSideBar__type) {
     }
 }
 
+// show more
+
+let showMore = document.querySelector('.show-more')
+let showMoreBtn = document.querySelector('.show-more-btn');
+let detailComponents = document.querySelector('.product__detail-components');    
+   
+showMoreBtn.onclick = function() {
+    detailComponents.classList.remove('detail__components-no-full');
+    showMore.style.display = "none";
+}
