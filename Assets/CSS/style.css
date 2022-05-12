@@ -298,6 +298,38 @@ input[name = "show-modal-register"] {
     justify-content: flex-end;
 }
 
+.auth-form__controls-btn {
+    min-width: 140px;
+    height: 36px;
+    color: var(--text-color);
+    background-color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 2px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form__controls-btn:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.auth-form__controls-btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.auth-form__controls-btn--primary:hover {
+    background-color: #780c0c;
+}
+
+
 .auth-form__controls-back {
     margin-right: 16px;
 }
@@ -315,7 +347,7 @@ input[name = "show-modal-register"] {
     width: 200px;
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     
 }
 
@@ -917,9 +949,9 @@ input[name = "r"] {
 
 /* Footer */
 #footer {
-    margin-bottom: 20px;
+    margin: 100px 0 20px 0;
     text-align: center;
-    border-top: 1px solid var(--primary-color) ;
+    border-top: 4px solid #f5f5f5;
 }
 
 
