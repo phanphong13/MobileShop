@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Shop</title>
-    <link rel="icon" href="/Assets/Img/Header/Logo/clickbuy.png">
+    <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/Assets/CSS/base.css">
-    <link rel="stylesheet" href="/Assets/CSS/grid.css">
-    <link rel="stylesheet" href="/Assets/CSS/style.css">
-    <link rel="stylesheet" href="/Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="Assets/CSS/base.css">
+    <link rel="stylesheet" href="Assets/CSS/grid.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
     <div class="app">
@@ -19,7 +19,7 @@
            <div class="header-wrapper">
                <div class="header__logo">
                    <div class="header__logo-img">
-                        <img src="/Assets/Img/Header/Logo/clickbuy.png" alt="">
+                        <img src="./Assets/Img/Header/Logo/clickbuy.png" alt="">
                    </div>
                </div>
 
@@ -33,70 +33,154 @@
                </div>
 
                <div class="header__right">
-                    <div class="header__user">
+                    <!-- <div class="header__user">
                         <div class="header__right-icon">
                             <i class="fa-solid fa-user"></i>
                         </div>
                         <span class="header__right-text">
                             Tài Khoản
                         </span>
-                    </div>
-                    <div class="header__cart">
-                        <div class="header__right-icon">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <span class="header__right-text">
-                            Giỏ hàng
-                        </span>
-                        <div class="header__right-triangle">
-                        </div>
-                        <div class="header__cart-products">
-                            <span class="header__cart-products-header">Sản phẩm của bạn</span>
-                            <ul class="header__cart-products-list">
-                                
-                                <!-- <li class="header__cart-products-item">
-                                    <div class="header__cart-products-item-img">
-                                        <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                    </div>
-                                    <div class="header__cart-products-item-body">
-                                        <div class="header__cart-products-item-body-top">
-                                            <div class="header__cart-products-item-text">Iphone 13 Pro Max - Chinh Hang VNA</div>
-                                        </div>
-                                        <div class="header__cart-products-item-body-bottom">
-                                            <div class="header__cart-products-item-price">
-                                                <span class="header__cart-products-item-price-price">
-                                                    15,999,000 đ
-                                                </span>
-                                                <span class="header__cart-products-item-price-mul">
-                                                    x
-                                                </span><span class="header__cart-products-item-price-qnt">
-                                                    1
-                                                </span>
+                    </div> -->
+                    <div class="h-right__text">
+                        
+                        <div class="h-right__text-text h-right__text-login">Đăng nhập</div>
+                        <div class="h-right__text-text h-right__text-register">Đăng kí</div>
+                        
+
+                        <div for="" class="modal__overlay-login"></div>
+                        
+                        <!-- Form register -->
+                        <div  class="modal__register">
+                            <div class="modal__body">
+                                <div class="auth-form">
+                                    <div class="auth-form__container">
+                                        <form action="" method="get" id="register-form">
+
+                                            <div class="auth-form__header">
+                                                <h3 class="auth-form__heading">
+                                                    Đăng kí
+                                                </h3>
+                                                <div class="auth-form__switch-btn-login">
+                                                    Đăng nhập
+                                                </div>
                                             </div>
     
-                                            <div class="header__cart-products-item-delete">
-                                                Xóa
+                                            <div class="auth-form__form">
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title" >Nhập họ tên</label>
+                                                    <input required type="text" name="name" rules="required|email" autocomplete="on" class="auth-form__input " placeholder="Nhập tên của bạn">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title" >Nhập email</label>
+                                                    <input required type="text" name="email" rules="required|email" autocomplete="on" class="auth-form__input " placeholder="Nhập email của bạn">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title">Nhập mật khẩu</label>
+                                                    <input required type="password" name="password" rules="required|min:6" autocomplete="on" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title">Nhập lại mật khẩu</label>
+                                                    <input required type="password" name="passwordX2" rules="isConfirm" autocomplete="on" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="auth-form__aside">
+                                                <p class="auth-form__text">
+                                                    Để có trải nghiệm tốt nhất, quý khách vui lòng đăng kí tài khoản.
+                                                </p>
+                                            </div>
+    
+                                            <div class="auth-form__controls">
+                                                <div class="btn auth-form__controls-back">TRỞ LẠI</div>
+                                                <button class="btn btn--primary">ĐĂNG KÍ</button>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                    <div class="auth-form__social">
+                                        <a href="" class="btn btn--with-icon btn--size-s auth-form__social-facebook">
+                                            <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                                            Kết nối với Facebook
+                                        </a>
+                                        <a href="" class="btn btn--with-icon btn--size-s auth-form__social-google">
+                                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                                            Kết nối với Google
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <!-- Form login -->
+                        <div class="modal__login">
+                            <div class="modal__body">
+                                <div class="auth-form">
+                                    <div class="auth-form__container">
+
+                                        <form action="./Trangchu.html" method="get" id="login-form">
+                                            <div class="auth-form__header">
+                                                <h3 class="auth-form__heading">
+                                                    Đăng nhập
+                                                </h3>
+                                                <div class="auth-form__switch-btn-register">
+                                                    Đăng kí
+                                                </div>
+                                            </div>
+                        
+                                            <div class="auth-form__form">
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title">Nhập email</label>
+                                                    <input required type="text" name="email" class="auth-form__input" rules="required|email" placeholder="Nhập email của bạn" autocomplete="on">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                                <div class="auth-form__group">
+                                                    <label for="" class="auth-form__title">Nhập mật khẩu</label>
+                                                    <input required type="password" name="password" class="auth-form__input" rules="required|min:6" placeholder="Nhập mật khẩu của bạn" autocomplete="on">
+                                                    <span class="auth-form__error"></span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="auth-form__support">
+                                                <a href="" class="auth-form__forget">
+                                                    Quên mật khẩu
+                                                </a>
+                                                <div class="auth-form__support-sepetare"></div>
+                                                <a href="" class="auth-form__help">
+                                                    Cần trợ giúp ?
+                                                </a>
+                                            </div>
+                        
+                                            <div class="auth-form__controls">
+                                                <div class="btn auth-form__controls-back">TRỞ LẠI</div>
+                                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
                                             </div>
                                             
-                                        </div>
+                                        </form>
                                     </div>
-                                </li> -->
-                                
-                                <li class="header__cart-products-item">
-                                    <div class="header__cart-products-item-noProduct">
-                                        <span>Giỏ hàng trống, vui lòng đặt hàng</span>
+                                    <div class="auth-form__social">
+                                        <a href="" class="btn btn--with-icon btn--size-s auth-form__social-facebook">
+                                            <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                                            Đăng nhập với Facebook
+                                        </a>
+                                        <a href="" class="btn btn--with-icon btn--size-s auth-form__social-google">
+                                            <i class="auth-form__social-icon fa-brands fa-google"></i>
+                                            Đăng nhập với Google
+                                        </a>
                                     </div>
-                                    
-                                </li>
-    
-                                
-                                
-                            </ul>
-                            <div class="header__cart-products-orderAll">
-                                Xem giỏ hàng
+                    
+                                </div>
                             </div>
-                        </div>
+                        </div> 
+
                     </div>
+                    
                </div>
 
            </div>
@@ -123,25 +207,25 @@
                                     <label for="r5" class="slidershow__navgation-bar slidershow__navgation-bar5"></label>
                                 </div>
                                 <div class="slider-item s1">
-                                    <img src="/Assets/Img/SliderShow/slider1.jpg" alt="">
+                                    <img src="./Assets/Img/SliderShow/slider1.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider2.png" alt="">
+                                    <img src="./Assets/Img/SliderShow/slider2.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider3.png" alt="">
+                                    <img src="./Assets/Img/SliderShow/slider3.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider4.png" alt="">
+                                    <img src="./Assets/Img/SliderShow/slider4.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider5.jpg" alt="">
+                                    <img src="./Assets/Img/SliderShow/slider5.jpg" alt="">
                                 </div>
                             </div>
                             
                         </div>
                         <div class="slidershow-bottom">
-                            <img src="/Assets/Img/SliderShow/sliderBottom.png" alt="">
+                            <img src="./Assets/Img/SliderShow/sliderBottom.png" alt="">
                         </div>
                     </div>
 
@@ -158,12 +242,12 @@
                             <ul class="event__list">
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale1.png" alt="">
+                                        <img src="./Assets/Img/Event/sale1.png" alt="">
                                     </div>
                                 </li>
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale2.jpg" alt="">
+                                        <img src="./Assets/Img/Event/sale2.jpg" alt="">
                                     </div>
                                 </li>
                                 
@@ -173,7 +257,7 @@
                 </div>
 
                 <!-- Body, Product, Category -->
-                <div class="row" style="margin: 30px 0;">
+                <div class="row" style="margin: 30px 0;"> 
                     <!-- Category -->
                     <div class="col l-3 m-3 c-0">
                         <!-- Price  -->
@@ -330,8 +414,9 @@
                             <div class="row">
                                 <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
                                     <div class="product">
+                                        <div class="product-like">Yêu thích</div>
                                         <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
+                                            <img src="./Assets/Img/Products/Apple/13promax.jpg" alt="">
                                         </a>
                                         <a href="#" class="product__description">
                                             <span>
@@ -354,199 +439,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
-                                            </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                     
                                 
                             </div>
@@ -592,7 +485,11 @@
 
     </div>
 
-    <script src="/Assets/JS/main.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        validator('#register-form');
+        validator('#login-form');
+    </script>
 
 </body>
 </html>
