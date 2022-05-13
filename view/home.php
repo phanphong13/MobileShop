@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Shop</title>
-    <link rel="icon" href="/Assets/Img/Header/Logo/clickbuy.png">
+    <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/Assets/CSS/base.css">
-    <link rel="stylesheet" href="/Assets/CSS/grid.css">
-    <link rel="stylesheet" href="/Assets/CSS/style.css">
-    <link rel="stylesheet" href="/Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="Assets/CSS/base.css">
+    <link rel="stylesheet" href="Assets/CSS/grid.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
     <div class="app">
@@ -19,7 +19,7 @@
            <div class="header-wrapper">
                <div class="header__logo">
                    <div class="header__logo-img">
-                        <img src="/Assets/Img/Header/Logo/clickbuy.png" alt="">
+                        <img src="Assets/Img/Header/Logo/clickbuy.png" alt="">
                    </div>
                </div>
 
@@ -56,7 +56,7 @@
                                 
                                 <!-- <li class="header__cart-products-item">
                                     <div class="header__cart-products-item-img">
-                                        <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
+                                        <img src="Assets/Img/Products/Apple/13promax.jpg" alt="">
                                     </div>
                                     <div class="header__cart-products-item-body">
                                         <div class="header__cart-products-item-body-top">
@@ -123,25 +123,25 @@
                                     <label for="r5" class="slidershow__navgation-bar slidershow__navgation-bar5"></label>
                                 </div>
                                 <div class="slider-item s1">
-                                    <img src="/Assets/Img/SliderShow/slider1.jpg" alt="">
+                                    <img src="Assets/Img/SliderShow/slider1.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider2.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider2.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider3.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider3.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider4.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider4.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider5.jpg" alt="">
+                                    <img src="Assets/Img/SliderShow/slider5.jpg" alt="">
                                 </div>
                             </div>
                             
                         </div>
                         <div class="slidershow-bottom">
-                            <img src="/Assets/Img/SliderShow/sliderBottom.png" alt="">
+                            <img src="Assets/Img/SliderShow/sliderBottom.png" alt="">
                         </div>
                     </div>
 
@@ -158,12 +158,12 @@
                             <ul class="event__list">
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale1.png" alt="">
+                                        <img src="Assets/Img/Event/sale1.png" alt="">
                                     </div>
                                 </li>
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale2.jpg" alt="">
+                                        <img src="Assets/Img/Event/sale2.jpg" alt="">
                                     </div>
                                 </li>
                                 
@@ -334,7 +334,7 @@
                                     <div class="product">
                                         <div class="product-like">Yêu thích</div>
                                         <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
+                                            <img src="Assets/Img/Products/Apple/13promax.jpg" alt="">
                                         </a>
                                         <a href="#" class="product__description">
                                             <span>
@@ -401,7 +401,7 @@
 
     </div>
 
-    <script src="/Assets/JS/main.js"></script>
+    <script src="Assets/JS/main.js"></script>
 
 </body>
 </html>

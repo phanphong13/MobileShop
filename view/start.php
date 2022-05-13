@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Shop</title>
-    <link rel="icon" href="/Assets/Img/Header/Logo/clickbuy.png">
+    <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/Assets/CSS/base.css">
-    <link rel="stylesheet" href="/Assets/CSS/grid.css">
-    <link rel="stylesheet" href="/Assets/CSS/style.css">
-    <link rel="stylesheet" href="/Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="Assets/CSS/base.css">
+    <link rel="stylesheet" href="Assets/CSS/grid.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
 </head>
 <body>
+
     <div class="app">
         <div id="header">
            <div class="header-wrapper">
                <div class="header__logo">
                    <div class="header__logo-img">
-                        <img src="/Assets/Img/Header/Logo/clickbuy.png" alt="">
+                        <img src="Assets/Img/Header/Logo/clickbuy.png" alt="">
                    </div>
                </div>
 
@@ -54,7 +55,7 @@
                             <div class="modal__body">
                                 <div class="auth-form">
                                     <div class="auth-form__container">
-                                        <form action="" method="get" id="register-form">
+                                        <form action="" method="post" id="register-form">
 
                                             <div class="auth-form__header">
                                                 <h3 class="auth-form__heading">
@@ -68,22 +69,22 @@
                                             <div class="auth-form__form">
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title" >Nhập họ tên</label>
-                                                    <input required type="text" name="name" rules="required|email" autocomplete="on" class="auth-form__input " placeholder="Nhập tên của bạn">
+                                                    <input required type="text" name="name" rules="required" required autocomplete="on" class="auth-form__input " placeholder="Nhập tên của bạn">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title" >Nhập email</label>
-                                                    <input required type="text" name="email" rules="required|email" autocomplete="on" class="auth-form__input " placeholder="Nhập email của bạn">
+                                                    <input required type="text" name="email" rules="required|email" required autocomplete="on" class="auth-form__input " placeholder="Nhập email của bạn">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title">Nhập mật khẩu</label>
-                                                    <input required type="password" name="password" rules="required|min:6" autocomplete="on" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
+                                                    <input required type="password" name="password" rules="required|min:6" required autocomplete="on" class="auth-form__input" placeholder="Nhập mật khẩu của bạn">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title">Nhập lại mật khẩu</label>
-                                                    <input required type="password" name="passwordX2" rules="isConfirm" autocomplete="on" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                                                    <input required type="password" name="passwordX2" rules="isConfirm" required autocomplete="on" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                             </div>
@@ -96,7 +97,7 @@
     
                                             <div class="auth-form__controls">
                                                 <div class="auth-form__controls-btn auth-form__controls-back">TRỞ LẠI</div>
-                                                <button class="auth-form__controls-btn auth-form__controls-btn--primary">ĐĂNG KÍ</button>
+                                                <button name="signup" class="auth-form__controls-btn auth-form__controls-btn--primary">ĐĂNG KÍ</button>
                                             </div>
 
                                         </form>
@@ -124,7 +125,8 @@
                                 <div class="auth-form">
                                     <div class="auth-form__container">
 
-                                        <form action="./Trangchu.html" method="get" id="login-form">
+                                        <form action="" method="post" id="login-form">
+                                            
                                             <div class="auth-form__header">
                                                 <h3 class="auth-form__heading">
                                                     Đăng nhập
@@ -137,12 +139,12 @@
                                             <div class="auth-form__form">
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title">Nhập email</label>
-                                                    <input required type="text" name="email" class="auth-form__input" rules="required|email" placeholder="Nhập email của bạn" autocomplete="on">
+                                                    <input required type="text" name="email" class="auth-form__input" rules="required|email"  required placeholder="Nhập email của bạn" autocomplete="on">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                                 <div class="auth-form__group">
                                                     <label for="" class="auth-form__title">Nhập mật khẩu</label>
-                                                    <input required type="password" name="password" class="auth-form__input" rules="required|min:6" placeholder="Nhập mật khẩu của bạn" autocomplete="on">
+                                                    <input required type="password" name="password" class="auth-form__input" rules="required|min:6" required placeholder="Nhập mật khẩu của bạn" autocomplete="on">
                                                     <span class="auth-form__error"></span>
                                                 </div>
                                             </div>
@@ -159,7 +161,7 @@
                         
                                             <div class="auth-form__controls">
                                                 <div class="auth-form__controls-btn auth-form__controls-back">TRỞ LẠI</div>
-                                                <button class="auth-form__controls-btn auth-form__controls-btn--primary">ĐĂNG NHẬP</button>
+                                                <button name="login" class="auth-form__controls-btn auth-form__controls-btn--primary">ĐĂNG NHẬP</button>
                                             </div>
                                             
                                         </form>
@@ -207,25 +209,25 @@
                                     <label for="r5" class="slidershow__navgation-bar slidershow__navgation-bar5"></label>
                                 </div>
                                 <div class="slider-item s1">
-                                    <img src="/Assets/Img/SliderShow/slider1.jpg" alt="">
+                                    <img src="Assets/Img/SliderShow/slider1.jpg" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider2.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider2.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider3.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider3.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider4.png" alt="">
+                                    <img src="Assets/Img/SliderShow/slider4.png" alt="">
                                 </div>
                                 <div class="slider-item">
-                                    <img src="/Assets/Img/SliderShow/slider5.jpg" alt="">
+                                    <img src="Assets/Img/SliderShow/slider5.jpg" alt="">
                                 </div>
                             </div>
                             
                         </div>
                         <div class="slidershow-bottom">
-                            <img src="/Assets/Img/SliderShow/sliderBottom.png" alt="">
+                            <img src="Assets/Img/SliderShow/sliderBottom.png" alt="">
                         </div>
                     </div>
 
@@ -242,12 +244,12 @@
                             <ul class="event__list">
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale1.png" alt="">
+                                        <img src="Assets/Img/Event/sale1.png" alt="">
                                     </div>
                                 </li>
                                 <li class="event__list-item">
                                     <div class="event__list-item-img">
-                                        <img src="/Assets/Img/Event/sale2.jpg" alt="">
+                                        <img src="Assets/Img/Event/sale2.jpg" alt="">
                                     </div>
                                 </li>
                                 
@@ -416,7 +418,7 @@
                                     <div class="product">
                                         <div class="product-like">Yêu thích</div>
                                         <a href="#" class="product__img">
-                                            <img src="/Assets/Img/Products/Apple/13promax.jpg" alt="">
+                                            <img src="Assets/Img/Products/Apple/13promax.jpg" alt="">
                                         </a>
                                         <a href="#" class="product__description">
                                             <span>
@@ -485,7 +487,7 @@
 
     </div>
 
-    <script src="/Assets/JS/main.js"></script>
+    <script src="Assets/JS/main.js"></script>
     <script>
         validator('#register-form');
         validator('#login-form');
