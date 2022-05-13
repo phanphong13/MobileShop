@@ -337,10 +337,10 @@
                                             <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
                                                 <div class="product">
                                                     <div class="product-like">Yêu thích</div>
-                                                    <a href="#" class="product__img">
+                                                    <a href="?controller=product" class="product__img">
                                                         <img src="<?php echo $products[$i]['link_img'] ?>" alt="">
                                                     </a>
-                                                    <a href="#" class="product__description">
+                                                    <a href="?controller=product" class="product__description">
                                                         <span>
                                                             <?php echo $products[$i]['title'] ?>
                                                         </span>

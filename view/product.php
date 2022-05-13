@@ -428,7 +428,7 @@
                           <div color="blue" class="purchase-item purchase-item-color">
                             <div class="l-2-4 c-3">
                               <img
-                                  src=".Assets/Img/Products/Apple/ip-13-pro-max-blue.png"
+                                  src="Assets/Img/Products/Apple/ip-13-pro-max-blue.png"
                                   alt=""
                                   class="purchase-item-img"
                                 />
