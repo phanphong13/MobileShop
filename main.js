@@ -54,3 +54,40 @@ showMoreBtn.onclick = function() {
     detailComponents.classList.remove('detail__components-no-full');
     showMore.style.display = "none";
 }
+
+// change color
+let productColors = document.getElementsByClassName('purchase-item-color');
+let productMemories = document.getElementsByClassName('purchase-item-memory')
+let productImg = document.querySelector('.product__purchase-option-item');
+
+
+let productSelectCurrent = productColors[0];
+productColors[0].classList.add('purchase-item--clicked')
+productImg.setAttribute('color', productColors[0].getAttribute('color'));
+productImg.setAttribute('src', `./Assets/Img/Products/Apple/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.png`)
+
+for (let productColor of productColors) {
+    productColor.addEventListener("click", function() {
+        productColor.classList.add('purchase-item--clicked');
+        productSelectCurrent.classList.remove('purchase-item--clicked');
+        productImg.setAttribute('color', productColor.getAttribute('color'));
+        productImg.setAttribute('src', `./Assets/Img/Products/Apple/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.png`)
+        productSelectCurrent = productColor;
+    });
+}
+
+function removeBlurBackground(pColor) {
+    pColor.classList.add('purchase-item--clicked')
+}
+
+// change title, price
+
+// for (let productColor of productColors) {
+//     productColor.addEventListener("click", function() {
+//         productColor.classList.add('purchase-item--clicked');
+//         productSelectCurrent.classList.remove('purchase-item--clicked');
+//         productImg.setAttribute('color', productColor.getAttribute('color'));
+//         productImg.setAttribute('src', `./Assets/Img/Products/Apple/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.png`)
+//         productSelectCurrent = productColor;
+//     });
+// }

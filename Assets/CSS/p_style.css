@@ -57,6 +57,7 @@ html {
     background-color: rgba(0, 0, 0, 0.03);
 }
 
+
 .breadcrumb__menu-item-link {
     display: flex;
     justify-content: flex-start;
@@ -299,6 +300,10 @@ html {
 .purchase-item:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.purchase-item--clicked {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .purchase-item-img {
