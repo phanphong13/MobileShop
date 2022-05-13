@@ -10,9 +10,9 @@
 				$name = $this->model->escape_string($_POST['name']);
 				$email = $this->model->escape_string($_POST['email']);
 				$password = $this->model->escape_string($_POST['password']);
-				//search username in database
+				//search email in database
 				$result = $this->model->query("select * from `accounts` where email = '$email';", true);
-				if($result === false) die("Failed in controller_login 1");
+				if($result === false) die("Failed in signup");
 				if($result === NULL) {
 					$data = array(
 						'name' => $name,
@@ -35,7 +35,7 @@
 				$email = $this->model->escape_string($_POST['email']);
 				$password = $this->model->escape_string($_POST['password']);
 				$result = $this->model->query("select * from `accounts` where email = '$email';", true);
-				if($result === false) die("Failed in controller_login 1");
+				if($result === false) die("Failed in login 1");
 
 				if($result === NULL) {
 					$alert = "Email sai";
@@ -55,6 +55,11 @@
 				}
 
 			}
+
+
+			// get product
+			$products = $this->model->getArray('products');
+			if ($products === false) die('Failed product 0');
 						
             include "./view/start.php";
 		}

@@ -330,32 +330,37 @@
                             <div class="row">
                                 
 
-                                <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
-                                    <div class="product">
-                                        <div class="product-like">Yêu thích</div>
-                                        <a href="#" class="product__img">
-                                            <img src="Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                        </a>
-                                        <a href="#" class="product__description">
-                                            <span>
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                                Iphone 13 Pro Max - Chính hãng VN/A
-
-                                            </span>
-                                        </a>
-                                        <div class="product__price">18,000,000đ</div>
-                                        <div class="product__price-sale">
-                                            <div>
-                                                15,999,000đ
+                                <?php 
+                                    if (isset($products)) {
+                                        for ($i = 0; $i < count($products); $i++) {
+                                ?>
+                                            <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
+                                                <div class="product">
+                                                    <div class="product-like">Yêu thích</div>
+                                                    <a href="#" class="product__img">
+                                                        <img src="<?php echo $products[$i]['link_img'] ?>" alt="">
+                                                    </a>
+                                                    <a href="#" class="product__description">
+                                                        <span>
+                                                            <?php echo $products[$i]['title'] ?>
+                                                        </span>
+                                                    </a>
+                                                    <div class="product__price"><?php if ($products[$i]['price'] != 0) echo number_format($products[$i]['price'],0,'',',').'đ'; ?></div>
+                                                    <div class="product__price-sale">
+                                                        <div>
+                                                            <?php echo number_format($products[$i]['sale_price'],0,'',',').'đ'; ?>
+                                                        </div>
+                                                        <div class="product__price-sale-icon"> 
+                                                            <i class="fa-solid fa-cart-shopping"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="product__price-sale-icon"> 
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                <?php 
+                                        }
+                                    }
+                                ?>
                                     
                                 
                             </div>

@@ -903,6 +903,7 @@ input[name = "r"] {
 }
 
 .product__description span{
+    height: 50px;
     font-size: 1.6rem;
     line-height: 25px;
     color: var(--text-color);
