@@ -323,7 +323,7 @@
                 <!-- bc list -->
                 <ul class="breadcrumb__list">
                   <li class="breadcrumb__list-item">
-                    <a href="./index.html" class="breadcrumb__list-item-link">
+                    <a href="?controller=home" class="breadcrumb__list-item-link">
                       <i class="fa-solid fa-house-user"></i>
                       Trang chủ
                     </a>
