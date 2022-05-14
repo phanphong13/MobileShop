@@ -260,14 +260,15 @@ let productImg = document.querySelector('.product__purchase-option-item');
 let productSelectCurrent = productColors[0];
 productColors[0].classList.add('purchase-item--clicked')
 productImg.setAttribute('color', productColors[0].getAttribute('color'));
-productImg.setAttribute('src', `Assets/Img/Products/Apple/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.png`)
+productImg.setAttribute('src', productColors[0].querySelector('.purchase-item-img').getAttribute('src'));
+
 
 for (let productColor of productColors) {
     productColor.addEventListener("click", function() {
         productColor.classList.add('purchase-item--clicked');
         productSelectCurrent.classList.remove('purchase-item--clicked');
         productImg.setAttribute('color', productColor.getAttribute('color'));
-        productImg.setAttribute('src', `Assets/Img/Products/Apple/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.png`)
+        productImg.setAttribute('src', productColor.querySelector('.purchase-item-img').getAttribute('src'));
         productSelectCurrent = productColor;
     });
 }
