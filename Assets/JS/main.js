@@ -276,3 +276,5 @@ for (let productColor of productColors) {
 function removeBlurBackground(pColor) {
     pColor.classList.add('purchase-item--clicked')
 }
+
+console.log(a)

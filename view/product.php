@@ -1153,6 +1153,18 @@
       </div>
     </div>
 
+
+    <script> 
+      let numOfColors = 'code php';
+      let products = [];
+      let obj = {
+          memory: 'code php',
+          color : 'code php',
+          priceOrigin: 'code php',
+          priceCurrent : 'code php'
+        };
+      products.push(obj);
+    </script>
     <script src="Assets/JS/main.js"></script>
   </body>
 </html>
