@@ -423,11 +423,11 @@
                                                 <div class="product">
                                                     <div class="product-like">Yêu thích</div>
                                                     <a href="#" class="product__img">
-                                                        <img src="<?php echo $products[$i]['link_img'] ?>" alt="">
+                                                        <img src="Assets/Img/Products/<?php echo $products[$i]['vendor'] .'/'. $products[$i]['link_img'] ?>" alt="">
                                                     </a>
                                                     <a href="#" class="product__description">
                                                         <span>
-                                                            <?php echo $products[$i]['title'] ?>
+                                                            <?php echo $products[$i]['name'] ?>
                                                         </span>
                                                     </a>
                                                     <div class="product__price"><?php if ($products[$i]['price'] != 0) echo number_format($products[$i]['price'],0,'',',').'đ'; ?></div>

@@ -356,7 +356,8 @@
             <!-- header -->
             <div class="product__brief-header">
               <div class="product__brief-name">
-                iPhone 13 Pro Max 128GB cũ 99% | Chính hãng VN/A
+                <!-- iPhone 13 Pro Max 128GB cũ 99% | Chính hãng VN/A -->
+                <?php if (isset($result) && $result !== NULL) echo $result[0]['name'];?>
               </div>
               <div class="product__brief-rating">
                 <i class="fa-solid fa-star star-yellow"></i>
@@ -377,7 +378,8 @@
                   <div class="product__info-img">
                     <div class="product__info--img">
                       <img
-                        id="ip-13-pro-max"
+                        vendor="<?php if (isset($result) && $result !== NULL) echo $result[0]['vendor'];?>"
+                        id="<?php if (isset($result) && $result !== NULL) echo $result[0]['name_img'];?>"
                         class="product__purchase-option-item"
                         alt=""
                       />
@@ -422,29 +424,29 @@
                           Màu sắc
                         </div>
                         <ul class="row product__purchase-option-list">
-                          <li
-                          class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                          <div color="blue" class="purchase-item purchase-item-color">
-                            <div class="l-2-4 c-3">
-                              <img
-                                  src="Assets/Img/Products/Apple/ip-13-pro-max-blue.png"
-                                  alt=""
-                                  class="purchase-item-img"
-                                />
-                              </div>
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">Blue</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
+                        <?php 
+                          if (isset($info)) {
+                            for ($i = 0; $i < count($info); $i++) { 
+                        ?>
+                          <li class="col l-4 m-6 c-6 product__purchase-option-item">
+                            <div color="<?php echo $info[$i]['color']; ?>" class="purchase-item purchase-item-color">
+                              <div class="l-2-4 c-3">
+                                <img
+                                    src="Assets/Img/Products/<?php echo $info[$i]['link_img']?>"
+                                    
+                                    alt=""
+                                    class="purchase-item-img"
+                                  />
+                                </div>
+                                <div class="purchase-item-info">
+                                  <div class="purchase-item-title"><?php echo $info[$i]['color']; ?></div>
+                                  <div class="purchase-item-price">
+                                    <?php echo number_format($info[$i]['price_color'],0,'',',').'đ'; ?>
                                 </div>
                               </div>
                             </div>
                           </li>
-                          <li
-                            
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
+                          <!-- <li class="col l-4 m-6 c-6 product__purchase-option-item">
                             <div color="gray" class="purchase-item purchase-item-color">
                               <div class="l-2-4 c-3">
                                 <img
@@ -460,48 +462,14 @@
                                 </div>
                               </div>
                             </div>
-                          </li>
-                          <li
-                            
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div color="gold" class="purchase-item purchase-item-color">
-                              <div class="l-2-4 c-3">
-                                <img
-                                  src="Assets/Img/Products/Apple/ip-13-pro-max-gold.png"
-                                  alt=""
-                                  class="purchase-item-img"
-                                />
-                              </div>
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">Gold</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                   
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div color="silver" class="purchase-item purchase-item-color">
-                              <div class="l-2-4 c-3">
-                                <img
-                                  src="Assets/Img/Products/Apple/ip-13-pro-max-silver.png"
-                                  alt=""
-                                  class="purchase-item-img"
-                                />
-                              </div>
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">Silver</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li>
+                          </li> -->
+                          
+                        <?php 
+                            }
+                          }
+                        ?>
                         </ul>
+
                       </div>
 
                       <!-- vertion -->

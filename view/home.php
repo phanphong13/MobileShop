@@ -337,12 +337,12 @@
                                             <div class="col l-3 m-6 c-6" style="margin-top: 15px;">
                                                 <div class="product">
                                                     <div class="product-like">Yêu thích</div>
-                                                    <a href="?controller=product" class="product__img">
-                                                        <img src="<?php echo $products[$i]['link_img'] ?>" alt="">
+                                                    <a href="?controller=product&id_product=<?php echo $products[$i]['id'] ?>" class="product__img">
+                                                        <img src="Assets/Img/Products/<?php echo $products[$i]['vendor'] .'/'. $products[$i]['link_img'] ?>" alt="">
                                                     </a>
-                                                    <a href="?controller=product" class="product__description">
+                                                    <a href="?controller=product&id_product=<?php echo $products[$i]['id'] ?>" class="product__description">
                                                         <span>
-                                                            <?php echo $products[$i]['title'] ?>
+                                                            <?php echo $products[$i]['name'] ?>
                                                         </span>
                                                     </a>
                                                     <div class="product__price"><?php if ($products[$i]['price'] != 0) echo number_format($products[$i]['price'],0,'',',').'đ'; ?></div>
