@@ -263,29 +263,18 @@ let productPriceCurrent = document.querySelector('.product-price-current');
 let productSelectCurrent = productColors[0];
 productColors[0].classList.add('purchase-item--clicked')
 productImg.setAttribute('color', productColors[0].getAttribute('color'));
-<<<<<<< HEAD
 productImg.setAttribute('src', `Assets/Img/Products/${productImg.getAttribute('vendor')}/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.jpg`)
 productPriceCurrent.innerText = productPrices[0].innerText;
-=======
-productImg.setAttribute('src', productColors[0].querySelector('.purchase-item-img').getAttribute('src'));
-
->>>>>>> 8f9731e87e9d58c4e677c965b1d3d247e6109068
 
 
 for (let i = 0; i < productColors.length; i++) (function(i){
     productColors[i].addEventListener("click", function() {
         productColors[i].classList.add('purchase-item--clicked');
         productSelectCurrent.classList.remove('purchase-item--clicked');
-<<<<<<< HEAD
         productImg.setAttribute('color', productColors[i].getAttribute('color'));
         productImg.setAttribute('src', `Assets/Img/Products/${productImg.getAttribute('vendor')}/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.jpg`)
         productPriceCurrent.innerText = productPrices[i].innerText;
         productSelectCurrent = productColors[i];
-=======
-        productImg.setAttribute('color', productColor.getAttribute('color'));
-        productImg.setAttribute('src', productColor.querySelector('.purchase-item-img').getAttribute('src'));
-        productSelectCurrent = productColor;
->>>>>>> 8f9731e87e9d58c4e677c965b1d3d247e6109068
     });
 })(i);
 
