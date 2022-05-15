@@ -464,7 +464,7 @@
                               for ($i = 0; $i < count($version); $i++) {
                           ?>
                             <li class="col l-4 m-6 c-6 product__purchase-option-item">
-                              <a href="?controller=product&id_product=<?php echo $version[$i]['version_id'] ?>">
+                              <a href="?controller=product&id_product=<?php echo $version[$i]['version_id'] ?>" class = "product__purchase-option-item-link">
                                 <div class="purchase-item purchase-item-memory">
                                   <div class="purchase-item-info">
                                     <div class="purchase-item-title"><?php echo $version[$i]['version'] ?></div>

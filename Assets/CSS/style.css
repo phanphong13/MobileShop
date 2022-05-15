@@ -129,6 +129,16 @@
     display: none;
 }
 
+.modal__resetPassword {
+    position: fixed;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
 .modal__overlay-login {
     position: fixed;
     top: 0;
@@ -242,7 +252,7 @@ input[name = "show-modal-register"] {
 }
 
 .auth-form__input:focus {
-    border: 1px solid var(--primary-color);
+    border: 1px solid blue;
 }
 
 .auth-form__input-error {
@@ -294,6 +304,7 @@ input[name = "show-modal-register"] {
 
 .auth-form__controls {
     margin-top: 30px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: flex-end;
 }
@@ -373,8 +384,71 @@ input[name = "show-modal-register"] {
 
 
 .header__user {
+    position: relative;
+}
+
+.header__user-info {
+    position: absolute;
+    width: 300px;
+    top: 130%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    animation: fadeIn ease 0.2s;
+    display: none;
+}
+
+.header__user-info::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    height: 15px;
+    width: 100%;
+}
+
+
+.header__user-info::after {
+    position: absolute;
+    content: "";
+    top: -12px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 12px solid #fff;
+}
+
+.header__user-info--email {
+    display: block;
+    font-size: 1.4rem;
+    padding: 15px 10px;
 
 }
+
+.header__user-info--resetPassword {
+    display: block;
+    font-size: 1.4rem;
+    padding: 15px 10px;
+}
+
+.header__user-info--logout {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    padding: 15px 10px;
+}
+
+.header__user-info--resetPassword:hover {
+    background-color: #e3e3e3
+}
+
+.header__user-info--logout:hover {
+    background-color: #e3e3e3
+}
+
 
 .header__cart {
     margin-left: 25px;
@@ -399,11 +473,6 @@ input[name = "show-modal-register"] {
     color: antiquewhite;
 }
 
-.header__cart:hover .header__cart-products {
-    display: block;
-}
-
-
 .header__cart::before {
     content: "";
     position: absolute;
@@ -413,26 +482,7 @@ input[name = "show-modal-register"] {
     height: 12px;
 }
 
-.header__right-triangle {
-    display: none;
-}
 
-.header__right-triangle::after {
-    position: absolute;
-    content: "";
-    top: 100%;
-    right: 20px;
-    width: 0;
-    height: 0;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
-    border-bottom: 12px solid #fff;
-    z-index: 1;
-}
-
-.header__cart:hover .header__right-triangle {
-    display: block;
-}
 /* Cart product List */
 
 .header__cart-products {
@@ -443,10 +493,21 @@ input[name = "show-modal-register"] {
     background-color: #fff;
     box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
     border-radius: 4px;
-    display: none;   
     animation: fadeIn ease 0.2s;
+    display: none;   
 }
 
+.header__cart-products::after {
+    position: absolute;
+    content: "";
+    top: -12px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 12px solid #fff;
+}
 
 .header__cart-products-header {
     display: block;

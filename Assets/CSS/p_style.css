@@ -287,6 +287,10 @@ html {
     margin-top: 8px;
 }
 
+.product__purchase-option-item-link {
+    text-decoration: none;
+}
+
 .purchase-item {
     display: flex;
     border: 1px solid var(--border-color);
@@ -322,6 +326,7 @@ html {
 }
 
 .purchase-item-price {
+    color: var(--black-color);
     font-size: 1.2rem;
 }
 

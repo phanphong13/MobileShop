@@ -40,6 +40,68 @@
                         <span class="header__right-text">
                             Tài Khoản
                         </span>
+                        
+                        <div class="header__user-info">
+                            <span class="header__user-info--email">
+                                tranmanh2672002@gmail.com
+                            </span>
+
+                            <span class="header__user-info--resetPassword">
+                                <i class="fa-solid fa-key"></i>
+                                Đổi mật khẩu
+                            </span>
+
+                            <div for="" class="modal__overlay-login"></div>
+
+                            <!-- Form resetPassword -->
+                            <div class="modal__resetPassword">
+                                <div class="modal__body">
+                                    <div class="auth-form">
+                                        <div class="auth-form__container">
+
+                                            <form action="" method="post" id="resetPassword-form">
+                                                
+                                                <div class="auth-form__header">
+                                                    <h3 class="auth-form__heading">
+                                                        Đổi mật khẩu
+                                                    </h3>
+                                                    
+                                                </div>
+                            
+                                                <div class="auth-form__form">
+                                                    <div class="auth-form__group">
+                                                        <label for="" class="auth-form__title">Nhập mật khẩu hiện tại</label>
+                                                        <input required type="password" name="password" class="auth-form__input" rules="required" required placeholder="Nhập mật khẩu hiện tại của bạn" autocomplete="on">
+                                                        <span class="auth-form__error"></span>
+                                                    </div>
+                                                    <div class="auth-form__group">
+                                                        <label for="" class="auth-form__title">Nhập mật khẩu mới</label>
+                                                        <input required type="password" name="password-new" class="auth-form__input" rules="required|min:6" required placeholder="Nhập mật khẩu mới của bạn" autocomplete="on">
+                                                        <span class="auth-form__error"></span>
+                                                    </div>
+                                                    <div class="auth-form__group">
+                                                        <label for="" class="auth-form__title">Nhập lại mật khẩu</label>
+                                                        <input required type="password" name="password-newX2" class="auth-form__input" rules="required" required placeholder="Nhập lại mật khẩu của bạn" autocomplete="on">
+                                                        <span class="auth-form__error"></span>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="auth-form__controls">
+                                                    <button name="reset" class="auth-form__controls-btn auth-form__controls-btn--primary">XÁC NHẬN</button>
+                                                </div>
+                                                
+                                            </form>
+                                        </div>
+                        
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <a href="" class="header__user-info--logout">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Đăng xuất
+                            </a>
+                        </div>
                     </div>
                     <div class="header__cart">
                         <div class="header__right-icon">
@@ -48,8 +110,6 @@
                         <span class="header__right-text">
                             Giỏ hàng
                         </span>
-                        <div class="header__right-triangle">
-                        </div>
                         <div class="header__cart-products">
                             <span class="header__cart-products-header">Sản phẩm của bạn</span>
                             <ul class="header__cart-products-list">
@@ -407,7 +467,9 @@
     </div>
 
     <script src="Assets/JS/main.js"></script>
-
+    <script>
+        validator('#resetPassword-form');
+    </script>
 </body>
 </html>
 

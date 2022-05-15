@@ -60,6 +60,41 @@ var modal__overlay__login = document.querySelector('.modal__overlay-login');
 
 var btnBack = document.querySelectorAll('.auth-form__controls-back');
 
+// mo user-info
+
+var userInfoBtn = document.querySelector('.header__user');
+var userInfo = document.querySelector('.header__user-info');
+
+if (userInfoBtn) {
+    userInfoBtn.addEventListener('click', function() {
+        userInfo.classList.toggle("display");
+    })
+
+    userInfo.addEventListener('click', function(event) {
+        event.stopPropagation();
+    })
+}
+
+// mo CartList
+
+var btnCart = document.querySelector('.header__cart');
+var cartList = document.querySelector('.header__cart-products');
+
+if (btnCart) {
+    btnCart.addEventListener('click', function() {
+        cartList.classList.toggle("display");
+    })
+
+    cartList.addEventListener('click', function(event) {
+        event.stopPropagation();
+    })
+}
+
+// 
+
+var navResetPassword = document.querySelector('.header__user-info--resetPassword');
+var modal__resetPassword = document.querySelector('.modal__resetPassword');
+
 
 // mo login
 if (navLogin) {
@@ -76,15 +111,37 @@ if (navRegister) {
         modal__overlay__login.setAttribute("style", "display: block;");
         modal__register.setAttribute("style", "display: block;");
     }
+    
+}
 
+// mo resetPassword 
+
+if (navResetPassword) {
+    navResetPassword.addEventListener('click', function() {
+        modal__overlay__login.setAttribute("style", "display: block;");
+        modal__resetPassword.setAttribute("style", "display: block;");
+    });
+
+    navResetPassword.addEventListener('click', function(event) {
+        event.stopPropagation();
+    })
 }
 
 // click overlay => out
 if (modal__overlay__login) {
     modal__overlay__login.onclick = function() {
-        modal__overlay__login.setAttribute("style", "display: none;");
-        modal__login.setAttribute("style", "display: none;");
-        modal__register.setAttribute("style", "display: none;");
+        if(modal__overlay__login) {
+            modal__overlay__login.setAttribute("style", "display: none;");
+        }
+        if(modal__login) {
+            modal__login.setAttribute("style", "display: none;");
+        }
+        if(modal__register) {
+            modal__register.setAttribute("style", "display: none;");
+        }
+        if (modal__resetPassword) {
+            modal__resetPassword.setAttribute("style", "display: none;");
+        }
     }
 
 }
@@ -245,10 +302,14 @@ function validator(formSelector) {
 let showMore = document.querySelector('.show-more')
 let showMoreBtn = document.querySelector('.show-more-btn');
 let detailComponents = document.querySelector('.product__detail-components');    
-   
-showMoreBtn.onclick = function() {
-    detailComponents.classList.remove('detail__components-no-full');
-    showMore.style.display = "none";
+  
+
+if(showMoreBtn) {
+    showMoreBtn.onclick = function() {
+        detailComponents.classList.remove('detail__components-no-full');
+        showMore.style.display = "none";
+    }
+
 }
 
 // change color
