@@ -12,7 +12,7 @@ CREATE TABLE `accounts` (
 );
 
 CREATE TABLE `products` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `vendor` varchar(10) NOT NULL,
   `name` varchar(100) NOT NULL,
   `name_img` varchar(100) NOT NULL,
@@ -23,52 +23,51 @@ CREATE TABLE `products` (
 );
 
 
-INSERT INTO `products` (`id` ,`vendor`, `name`, `name_img`, `link_img`, `price`, `sale_price`) VALUES
+INSERT INTO `products` (`vendor`, `name`, `name_img`, `link_img`, `price`, `sale_price`) VALUES
 
-(2,'Apple', 'Apple iPhone 13 Pro Max 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 34990000, 29150000),
-(3,'Apple', 'Apple iPhone 13 128GB Chính hãng VN/A', 'ip-13', 'ip-13-Green.jpg', 24490000, 20790000),
-(5,'Apple', 'Apple iPhone 13 Pro Max 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 36990000, 32190000),
-(6,'Apple', 'Apple iPhone 13 Pro 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Blue.jpg', 30990000, 27190000),
-(7,'Apple', 'Apple iPhone 13 Pro 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Silver.jpg', 34990000, 29690000),
-(8,'Apple', 'Apple iPhone 13 256GB Chính hãng VN/A', 'ip-13', 'ip-13-Blue.jpg', 27990000, 23290000),
-(9,'Apple', 'Apple iPhone 12 64GB Chính hãng VN/A', 'ip-12', 'ip-12-White.jpg', 24990000, 16490000),
-(11,'Apple', 'Apple iPhone 13 Pro Max 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 43990000, 38890000),
-(13,'Apple', 'Apple iPhone 12 128GB Chính hãng VN/A', 'ip-12', 'ip-12-Purple.jpg', 21600000, 18390000),
-(15,'Apple', 'Apple iPhone 13 Pro Max 1TB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Green.jpg', 49990000, 43490000),
-(17,'Apple', 'Apple iPhone 13 Pro 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 40990000, 33390000),
-(18,'Apple', 'Apple iPhone 13 512GB Chính hãng VN/A', 'ip-13', 'ip-13-Black.jpg', 33990000, 24990000),
-
-
-(19,'Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|256GB)', 's22-ultra', 's22-ultra-Burgundy.jpg', 33990000, 26290000),
-(20,'Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|512GB)', 's22-ultra', 's22-ultra-Green.jpg', 36990000,29190000),
-(21,'Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|128GB)', 's22-plus', 's22-plus-Pink Gold.jpg', 25990000, 19190000),
-(22,'Samsung', 'Samsung Galaxy S22 Ultra 5G (8GB|128GB)', 's22-ultra', 's22-ultra-White.jpg', 30990000, 23490000),
-(23,'Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|256GB)', 's22-plus', 's22-plus-Green.jpg', 27490000, 20590000),
-(24,'Samsung', 'Samsung Galaxy S21 FE 5G 8GB 128GB', 's21-fe', 's21-fe-Green.jpg', 16990000, 12790000),
-(25,'Samsung', 'Galaxy Z Fold3 5G 256GB', 'z-fold3', 'z-fold3-Black.jpg', 41990000, 32490000),
-(26,'Samsung', 'Galaxy Z Flip3 5G 128GB', 'z-flip3', 'z-flip3-Cream.jpg', 24990000, 18490000),
-(27,'Samsung', 'Galaxy Z Fold3 5G 512GB', 'z-fold3', 'z-fold3-Silver.jpg', 44990000, 35490000),
-(28,'Samsung', 'Galaxy Z Flip3 5G 256GB', 'z-flip3', 'z-flip3-Lavender.jpg', 26990000, 20290000),
-(29,'Samsung', 'Samsung Galaxy S21 FE 5G 8GB 256GB', 's21-fe', 's21-fe-Violet.jpg', 18990000, 13990000),
+('Apple', 'Apple iPhone 13 Pro Max 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 34990000, 29150000),
+('Apple', 'Apple iPhone 13 128GB Chính hãng VN/A', 'ip-13', 'ip-13-Green.jpg', 24490000, 20790000),
+('Apple', 'Apple iPhone 13 Pro Max 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 36990000, 32190000),
+('Apple', 'Apple iPhone 13 Pro 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Blue.jpg', 30990000, 27190000),
+('Apple', 'Apple iPhone 13 Pro 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Silver.jpg', 34990000, 29690000),
+('Apple', 'Apple iPhone 13 256GB Chính hãng VN/A', 'ip-13', 'ip-13-Blue.jpg', 27990000, 23290000),
+('Apple', 'Apple iPhone 12 64GB Chính hãng VN/A', 'ip-12', 'ip-12-White.jpg', 24990000, 16490000),
+('Apple', 'Apple iPhone 13 Pro Max 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 43990000, 38890000),
+('Apple', 'Apple iPhone 12 128GB Chính hãng VN/A', 'ip-12', 'ip-12-Purple.jpg', 21600000, 18390000),
+('Apple', 'Apple iPhone 13 Pro Max 1TB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Green.jpg', 49990000, 43490000),
+('Apple', 'Apple iPhone 13 Pro 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 40990000, 33390000),
+('Apple', 'Apple iPhone 13 512GB Chính hãng VN/A', 'ip-13', 'ip-13-Black.jpg', 33990000, 24990000),
 
 
+('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|256GB)', 's22-ultra', 's22-ultra-Burgundy.jpg', 33990000, 26290000),
+('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|512GB)', 's22-ultra', 's22-ultra-Green.jpg', 36990000,29190000),
+('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|128GB)', 's22-plus', 's22-plus-Pink Gold.jpg', 25990000, 19190000),
+('Samsung', 'Samsung Galaxy S22 Ultra 5G (8GB|128GB)', 's22-ultra', 's22-ultra-White.jpg', 30990000, 23490000),
+('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|256GB)', 's22-plus', 's22-plus-Green.jpg', 27490000, 20590000),
+('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 128GB', 's21-fe', 's21-fe-Green.jpg', 16990000, 12790000),
+('Samsung', 'Galaxy Z Fold3 5G 256GB', 'z-fold3', 'z-fold3-Black.jpg', 41990000, 32490000),
+('Samsung', 'Galaxy Z Flip3 5G 128GB', 'z-flip3', 'z-flip3-Cream.jpg', 24990000, 18490000),
+('Samsung', 'Galaxy Z Fold3 5G 512GB', 'z-fold3', 'z-fold3-Silver.jpg', 44990000, 35990000),
+('Samsung', 'Galaxy Z Flip3 5G 256GB', 'z-flip3', 'z-flip3-Lavender.jpg', 26990000, 20290000),
+('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 256GB', 's21-fe', 's21-fe-Violet.jpg', 18990000, 13990000),
 
-(30,'Xiaomi', 'Xiaomi Poco F3 8GB 256GB', 'xi-pocof3', 'xi-pocof3-Blue.jpg', 9990000, 8990000),
-(31,'Xiaomi', 'Xiaomi Poco F3 6GB 128GB', 'xi-pocof3', 'xi-pocof3-White.jpg', 9090000, 8090000),
-(32,'Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Black.jpg', 4990000, 4050000),
-(33,'Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 64GB )', 'xi-redmi-note11', 'xi-redmi-note11-Blue.jpg', 4690000, 3690000),
-(34,'Xiaomi', 'Xiaomi Redmi Note 11 ( 6GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Green.jpg', 5190000, 5090000),
-(35,'Xiaomi', 'Xiaomi Redmi 9C 4GB – 128GB', 'xi-redmi-9c', 'xi-redmi-9c-Blue.jpg', 3490000, 2990000),
-(36,'Xiaomi', 'Xiaomi Redmi 9C 3GB – 64GB', 'xi-redmi-9c', 'xi-redmi-9c-Orange.jpg', 2990000, 2590000),
-(37,'Xiaomi', 'Redmi 10 4GB 128GB', 'xi-redmi-10', 'xi-redmi-10-Blue.jpg', 4490000, 3850000),
-(38,'Xiaomi', 'Redmi 10 4GB 64GB', 'xi-redmi-10', 'xi-redmi-10-Gray.jpg', 4390000, 36500000);
+
+
+('Xiaomi', 'Xiaomi Poco F3 8GB 256GB', 'xi-pocof3', 'xi-pocof3-Blue.jpg', 9990000, 8990000),
+('Xiaomi', 'Xiaomi Poco F3 6GB 128GB', 'xi-pocof3', 'xi-pocof3-White.jpg', 9090000, 8090000),
+('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Black.jpg', 4990000, 4050000),
+('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 64GB )', 'xi-redmi-note11', 'xi-redmi-note11-Blue.jpg', 4690000, 3690000),
+('Xiaomi', 'Xiaomi Redmi Note 11 ( 6GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Green.jpg', 5190000, 5090000),
+('Xiaomi', 'Xiaomi Redmi 9C 4GB – 128GB', 'xi-redmi-9c', 'xi-redmi-9c-Blue.jpg', 3490000, 2990000),
+('Xiaomi', 'Xiaomi Redmi 9C 3GB – 64GB', 'xi-redmi-9c', 'xi-redmi-9c-Orange.jpg', 2990000, 2590000),
+('Xiaomi', 'Redmi 10 4GB 128GB', 'xi-redmi-10', 'xi-redmi-10-Blue.jpg', 4490000, 3850000),
+('Xiaomi', 'Redmi 10 4GB 64GB', 'xi-redmi-10', 'xi-redmi-10-Gray.jpg', 4390000, 3650000);
 
 
 CREATE TABLE `product_detail` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL,
   `color` varchar(20) NOT NULL,
-  `price_color` int(20) NOT NULL,
   `sale_price_color` int(20) NOT NULL,
   `link_img` varchar(100) NOT NULL,
   PRIMARY KEY(id),
@@ -76,187 +75,299 @@ CREATE TABLE `product_detail` (
 );
 
 
-INSERT INTO `product_detail` (`product_id`, `color`, `price_color`, `sale_price_color`, `link_img`) VALUES
+INSERT INTO `product_detail` (`product_id`, `color`, `sale_price_color`, `link_img`) VALUES
+
+(1, 'Black', 29150000, 'Apple/ip-13-promax-Black.jpg'),
+(1, 'Blue',  29390000, 'Apple/ip-13-promax-Blue.jpg'),
+(1, 'Gold',  29150000, 'Apple/ip-13-promax-Gold.jpg'),
+(1, 'Green',  29490000, 'Apple/ip-13-promax-Green.jpg'),
+(1, 'Silver',  29150000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(2, 'Black',  20490000, 'Apple/ip-13-Black.jpg'),
+(2, 'Blue',  20490000, 'Apple/ip-13-Blue.jpg'),
+(2, 'Green',  20790000, 'Apple/ip-13-Green.jpg'),
+(2, 'Pink',  20790000, 'Apple/ip-13-Pink.jpg'),
+(2, 'Red',  19990000, 'Apple/ip-13-Red.jpg'),
+(2, 'Silver',  20390000, 'Apple/ip-13-Silver.jpg'),
+
+(3, 'Black',  31990000, 'Apple/ip-13-promax-Black.jpg'),
+(3, 'Blue',  32390000, 'Apple/ip-13-promax-Blue.jpg'),
+(3, 'Gold',  32190000, 'Apple/ip-13-promax-Gold.jpg'),
+(3, 'Green',  32490000, 'Apple/ip-13-promax-Green.jpg'),
+(3, 'Silver',  32090000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(4, 'Black',  26690000, 'Apple/ip-13-promax-Black.jpg'),
+(4, 'Blue',  27190000, 'Apple/ip-13-promax-Blue.jpg'),
+(4, 'Gold',  27090000, 'Apple/ip-13-promax-Gold.jpg'),
+(4, 'Green',  27290000, 'Apple/ip-13-promax-Green.jpg'),
+(4, 'Silver',  27990000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(5, 'Black',  29390000, 'Apple/ip-13-promax-Black.jpg'),
+(5, 'Blue',  29790000, 'Apple/ip-13-promax-Blue.jpg'),
+(5, 'Gold',  29690000, 'Apple/ip-13-promax-Gold.jpg'),
+(5, 'Green',  29790000, 'Apple/ip-13-promax-Green.jpg'),
+(5, 'Silver',  29690000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(6, 'Black',  23290000, 'Apple/ip-13-Black.jpg'),
+(6, 'Blue',  23290000, 'Apple/ip-13-Blue.jpg'),
+(6, 'Green',  23990000, 'Apple/ip-13-Green.jpg'),
+(6, 'Pink',  23490000, 'Apple/ip-13-Pink.jpg'),
+(6, 'Red',  23290000, 'Apple/ip-13-Red.jpg'),
+(6, 'Silver',  23290000, 'Apple/ip-13-Silver.jpg'),
+
+(7, 'Black',  16490000, 'Apple/ip-12-Black.jpg'),
+(7, 'Blue',  16490000, 'Apple/ip-12-Blue.jpg'),
+(7, 'Green',  16490000, 'Apple/ip-12-Green.jpg'),
+(7, 'Purple',  16490000, 'Apple/ip-12-Purple.jpg'),
+(7, 'Red',  16290000, 'Apple/ip-12-Red.jpg'),
+(7, 'White',  16490000, 'Apple/ip-12-White.jpg'),
+
+(8, 'Black',  38490000, 'Apple/ip-13-promax-Black.jpg'),
+(8, 'Blue',  38890000, 'Apple/ip-13-promax-Blue.jpg'),
+(8, 'Gold',  38890000, 'Apple/ip-13-promax-Gold.jpg'),
+(8, 'Green',  38890000, 'Apple/ip-13-promax-Green.jpg'),
+(8, 'Silver',  38990000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(9, 'Black',  18390000, 'Apple/ip-12-Black.jpg'),
+(9, 'Blue',  18390000, 'Apple/ip-12-Blue.jpg'),
+(9, 'Green',  18390000, 'Apple/ip-12-Green.jpg'),
+(9, 'Purple',  18390000, 'Apple/ip-12-Purple.jpg'),
+(9, 'Red',  18390000, 'Apple/ip-12-Red.jpg'),
+(9, 'White',  18390000, 'Apple/ip-12-White.jpg'),
+
+(10, 'Black',  42790000, 'Apple/ip-13-promax-Black.jpg'),
+(10, 'Blue',  43490000, 'Apple/ip-13-promax-Blue.jpg'),
+(10, 'Gold',  43490000, 'Apple/ip-13-promax-Gold.jpg'),
+(10, 'Green',  43490000, 'Apple/ip-13-promax-Green.jpg'),
+(10, 'Silver',  43490000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(11, 'Black',  33390000, 'Apple/ip-13-promax-Black.jpg'),
+(11, 'Blue',  33890000, 'Apple/ip-13-promax-Blue.jpg'),
+(11, 'Gold',  33890000, 'Apple/ip-13-promax-Gold.jpg'),
+(11, 'Green',  33990000, 'Apple/ip-13-promax-Green.jpg'),
+(11, 'Silver',  33890000, 'Apple/ip-13-promax-Silver.jpg'),
+
+(12, 'Black',  24990000, 'Apple/ip-13-Black.jpg'),
+(12, 'Blue',  24990000, 'Apple/ip-13-Blue.jpg'),
+(12, 'Green',  24990000, 'Apple/ip-13-Green.jpg'),
+(12, 'Pink',  24990000, 'Apple/ip-13-Pink.jpg'),
+(12, 'Red',  24990000, 'Apple/ip-13-Red.jpg'),
+(12, 'Silver',  24990000, 'Apple/ip-13-Silver.jpg'),
+
+(13, 'Burgundy',  26290000, 'Samsung/s22-ultra-Burgundy.jpg'),
+(13, 'Black',  26290000, 'Samsung/s22-ultra-Black.jpg'),
+(13, 'Green',  26290000, 'Samsung/s22-ultra-Green.jpg'),
+(13, 'White',  26290000, 'Samsung/s22-ultra-White.jpg'),
+
+(14, 'Burgundy',  29190000, 'Samsung/s22-ultra-Burgundy.jpg'),
+(14, 'Black',  29190000, 'Samsung/s22-ultra-Black.jpg'),
+(14, 'Green',  29190000, 'Samsung/s22-ultra-Green.jpg'),
+(14, 'White',  29190000, 'Samsung/s22-ultra-White.jpg'),
+
+(15, 'Pink Gold',  19190000, 'Samsung/s22-plus-Pink Gold.jpg'),
+(15, 'Black',  19190000, 'Samsung/s22-plus-Black.jpg'),
+(15, 'Green',  19190000, 'Samsung/s22-plus-Green.jpg'),
+(15, 'White', 19190000, 'Samsung/s22-plus-White.jpg'),
+
+(16, 'Burgundy',  23490000, 'Samsung/s22-ultra-Burgundy.jpg'),
+(16, 'Black',  23490000, 'Samsung/s22-ultra-Black.jpg'),
+(16, 'Green',  23490000, 'Samsung/s22-ultra-Green.jpg'),
+(16, 'White',  23490000, 'Samsung/s22-ultra-White.jpg'),
+
+(17, 'Pink Gold',  20590000, 'Samsung/s22-plus-Pink Gold.jpg'),
+(17, 'Black',  20590000, 'Samsung/s22-plus-Black.jpg'),
+(17, 'Green',  20590000, 'Samsung/s22-plus-Green.jpg'),
+(17, 'White',  20590000, 'Samsung/s22-plus-White.jpg'),
+
+(18, 'Black',  12790000, 'Samsung/s21-fe-Black.jpg'),
+(18, 'Green',  12790000, 'Samsung/s21-fe-Green.jpg'),
+(18, 'Violet',  12790000, 'Samsung/s21-fe-Violet.jpg'),
+(18, 'White',  12790000, 'Samsung/s21-fe-White.jpg'),
+
+(19, 'Black',  32490000, 'Samsung/z-fold3-Black.jpg'),
+(19, 'Green',  32490000, 'Samsung/z-fold3-Green.jpg'),
+(19, 'Silver',  31990000, 'Samsung/z-fold3-Silver.jpg'),
+
+(20, 'Cream',  18490000, 'Samsung/z-flip3-Cream.jpg'),
+(20, 'Lavender',  18490000, 'Samsung/z-flip3-Lavender.jpg'),
+(20, 'Black',  18490000, 'Samsung/z-flip3-Black.jpg'),
+(20, 'Green',  18490000, 'Samsung/z-flip3-Green.jpg'),
+
+(21, 'Black',  35490000, 'Samsung/z-fold3-Black.jpg'),
+(21, 'Green',  35490000, 'Samsung/z-fold3-Green.jpg'),
+(21, 'Silver',  35990000, 'Samsung/z-fold3-Silver.jpg'),
+
+(22, 'Cream', 20290000, 'Samsung/z-flip3-Cream.jpg'),
+(22, 'Lavender',  20290000, 'Samsung/z-flip3-Lavender.jpg'),
+(22, 'Black',  20290000, 'Samsung/z-flip3-Black.jpg'),
+(22, 'Green',  20290000, 'Samsung/z-flip3-Green.jpg'),
+
+(23, 'Black',  13990000, 'Samsung/s21-fe-Black.jpg'),
+(23, 'Green',  13990000, 'Samsung/s21-fe-Green.jpg'),
+(23, 'Violet',  13990000, 'Samsung/s21-fe-Violet.jpg'),
+(23, 'White',  13990000, 'Samsung/s21-fe-White.jpg'),
+
+(24, 'Black',  8990000, 'Xiaomi/xi-pocof3-Black.jpg'),
+(24, 'Blue',  8990000, 'Xiaomi/xi-pocof3-Blue.jpg'),
+(24, 'White',  8990000, 'Xiaomi/xi-pocof3-White.jpg'),
+
+(25, 'Black',  8090000, 'Xiaomi/xi-pocof3-Black.jpg'),
+(25, 'Blue',  8090000, 'Xiaomi/xi-pocof3-Blue.jpg'),
+(25, 'White',  8090000, 'Xiaomi/xi-pocof3-White.jpg'),
+
+(26, 'Black',  4050000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
+(26, 'Blue',  4050000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
+(26, 'Green',  4050000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
+
+(27, 'Black',  3690000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
+(27, 'Blue',  3690000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
+(27, 'Green',  3690000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
+
+(28, 'Black',  5090000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
+(28, 'Blue',  5090000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
+(28, 'Green',  5090000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
+
+(29, 'Black',  2990000, 'Xiaomi/xi-redmi-9c-Black.jpg'),
+(29, 'Blue',  2990000, 'Xiaomi/xi-redmi-9c-Blue.jpg'),
+(29, 'Orange',  2990000, 'Xiaomi/xi-redmi-9c-Orange.jpg'),
+
+(30, 'Black',  2590000, 'Xiaomi/xi-redmi-9c-Black.jpg'),
+(30, 'Blue',  2590000, 'Xiaomi/xi-redmi-9c-Blue.jpg'),
+(30, 'Orange',  2590000, 'Xiaomi/xi-redmi-9c-Orange.jpg'),
+
+(31, 'Blue',  3850000, 'Xiaomi/xi-redmi-10-Blue.jpg'),
+(31, 'Gray',  3850000, 'Xiaomi/xi-redmi-10-Gray.jpg'),
+(31, 'White',  3850000, 'Xiaomi/xi-redmi-10-White.jpg'),
+
+(32, 'Blue',  3650000, 'Xiaomi/xi-redmi-10-Blue.jpg'),
+(32, 'Gray',  3650000, 'Xiaomi/xi-redmi-10-Gray.jpg'),
+(32, 'White',  3650000, 'Xiaomi/xi-redmi-10-White.jpg');
 
 
-(2, 'Black', 34990000, 29150000, 'Apple/ip-13-promax-Black.jpg'),
-(2, 'Blue', 34990000, 29390000, 'Apple/ip-13-promax-Blue.jpg'),
-(2, 'Gold', 34990000, 29150000, 'Apple/ip-13-promax-Gold.jpg'),
-(2, 'Green', 34990000, 29490000, 'Apple/ip-13-promax-Green.jpg'),
-(2, 'Silver', 34990000, 29150000, 'Apple/ip-13-promax-Silver.jpg'),
+CREATE TABLE `product_version` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `version` varchar(20) NOT NULL,
+  `price_version` int(20) NOT NULL,
+  `version_id` int(11) NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (product_id) REFERENCES products(id)
+);
 
+INSERT INTO `product_version` (`product_id`, `version`, `price_version`, `version_id`) VALUES
 
-(3, 'Black', 24990000, 20490000, 'Apple/ip-13-Black.jpg'),
-(3, 'Blue', 24990000, 20490000, 'Apple/ip-13-Blue.jpg'),
-(3, 'Green', 24490000, 20790000, 'Apple/ip-13-Green.jpg'),
-(3, 'Pink', 24990000, 20790000, 'Apple/ip-13-Pink.jpg'),
-(3, 'Red', 24990000, 19990000, 'Apple/ip-13-Red.jpg'),
-(3, 'Silver', 24990000, 20390000, 'Apple/ip-13-Silver.jpg'),
+(1, '128GB', 29150000, 1),
+(1, '256GB', 32190000, 3),
+(1, '512GB', 38890000, 8),
+(1, '1TB', 43490000, 10),
 
+(2, '128GB', 20790000, 2),
+(2, '256GB', 23290000, 6),
+(2, '512GB', 24990000, 12),
 
+(3, '128GB', 29150000, 1),
+(3, '256GB', 32190000, 3),
+(3, '512GB', 38890000, 8),
+(3, '1TB', 43490000, 10),
 
-(5, 'Black', 36990000, 31990000, 'Apple/ip-13-promax-Black.jpg'),
-(5, 'Blue', 36990000, 32390000, 'Apple/ip-13-promax-Blue.jpg'),
-(5, 'Gold', 36990000, 32190000, 'Apple/ip-13-promax-Gold.jpg'),
-(5, 'Green', 36990000, 32490000, 'Apple/ip-13-promax-Green.jpg'),
-(5, 'Silver', 36990000, 32090000, 'Apple/ip-13-promax-Silver.jpg'),
+(4, '128GB', 27190000, 4),
+(4, '256GB', 29690000, 5),
+(4, '512GB', 33390000, 11),
 
-(6, 'Black', 30990000, 26690000, 'Apple/ip-13-promax-Black.jpg'),
-(6, 'Blue', 30990000, 27190000, 'Apple/ip-13-promax-Blue.jpg'),
-(6, 'Gold', 30990000, 27090000, 'Apple/ip-13-promax-Gold.jpg'),
-(6, 'Green', 30990000, 27290000, 'Apple/ip-13-promax-Green.jpg'),
-(6, 'Silver', 30990000, 270990000, 'Apple/ip-13-promax-Silver.jpg'),
+(5, '128GB', 27190000, 4),
+(5, '256GB', 29690000, 5),
+(5, '512GB', 33390000, 11),
 
-(7, 'Black', 34990000, 29390000, 'Apple/ip-13-promax-Black.jpg'),
-(7, 'Blue', 34990000, 29790000, 'Apple/ip-13-promax-Blue.jpg'),
-(7, 'Gold', 34990000, 29690000, 'Apple/ip-13-promax-Gold.jpg'),
-(7, 'Green', 33990000, 29790000, 'Apple/ip-13-promax-Green.jpg'),
-(7, 'Silver', 34990000, 29690000, 'Apple/ip-13-promax-Silver.jpg'),
+(6, '128GB', 20790000, 2),
+(6, '256GB', 23290000, 6),
+(6, '512GB', 24990000, 12),
 
-(8, 'Black', 27990000, 23290000, 'Apple/ip-13-Black.jpg'),
-(8, 'Blue', 27990000, 23290000, 'Apple/ip-13-Blue.jpg'),
-(8, 'Green', 27990000, 23990000, 'Apple/ip-13-Green.jpg'),
-(8, 'Pink', 27990000, 23490000, 'Apple/ip-13-Pink.jpg'),
-(8, 'Red', 27990000, 23290000, 'Apple/ip-13-Red.jpg'),
-(8, 'Silver', 27990000, 23290000, 'Apple/ip-13-Silver.jpg'),
+(7, '64GB', 16490000, 7),
+(7, '128GB', 18390000, 9),
 
-(9, 'Black', 24990000, 16490000, 'Apple/ip-12-Black.jpg'),
-(9, 'Blue', 24990000, 16490000, 'Apple/ip-12-Blue.jpg'),
-(9, 'Green', 24990000, 16490000, 'Apple/ip-12-Green.jpg'),
-(9, 'Purple', 24990000, 16490000, 'Apple/ip-12-Purple.jpg'),
-(9, 'Red', 24990000, 16290000, 'Apple/ip-12-Red.jpg'),
-(9, 'White', 24990000, 16490000, 'Apple/ip-12-White.jpg'),
+(8, '128GB', 29150000, 1),
+(8, '256GB', 32190000, 3),
+(8, '512GB', 38890000, 8),
+(8, '1TB', 43490000, 10),
 
+(9, '64GB', 16490000, 7),
+(9, '128GB', 18390000, 9),
 
-(11, 'Black', 43990000, 38490000, 'Apple/ip-13-promax-Black.jpg'),
-(11, 'Blue', 43990000, 38890000, 'Apple/ip-13-promax-Blue.jpg'),
-(11, 'Gold', 43990000, 38890000, 'Apple/ip-13-promax-Gold.jpg'),
-(11, 'Green', 43990000, 388990000, 'Apple/ip-13-promax-Green.jpg'),
-(11, 'Silver', 43990000, 38990000, 'Apple/ip-13-promax-Silver.jpg'),
+(10, '128GB', 29150000, 1),
+(10, '256GB', 32190000, 3),
+(10, '512GB', 38890000, 8),
+(10, '1TB', 43490000, 10),
 
+(11, '128GB', 27190000, 4),
+(11, '256GB', 29690000, 5),
+(11, '512GB', 33390000, 11),
 
-(13, 'Black', 26990000, 18390000, 'Apple/ip-12-Black.jpg'),
-(13, 'Blue', 26990000, 18390000, 'Apple/ip-12-Blue.jpg'),
-(13, 'Green', 29990000, 18390000, 'Apple/ip-12-Green.jpg'),
-(13, 'Purple', 21600000, 18390000, 'Apple/ip-12-Purple.jpg'),
-(13, 'Red', 26990000, 18390000, 'Apple/ip-12-Red.jpg'),
-(13, 'White', 26990000, 18390000, 'Apple/ip-12-White.jpg'),
+(12, '128GB', 20790000, 2),
+(12, '256GB', 23290000, 6),
+(12, '512GB', 24990000, 12),
 
-(15, 'Black', 49990000, 42790000, 'Apple/ip-13-promax-Black.jpg'),
-(15, 'Blue', 49990000, 43490000, 'Apple/ip-13-promax-Blue.jpg'),
-(15, 'Gold', 49990000, 43490000, 'Apple/ip-13-promax-Gold.jpg'),
-(15, 'Green', 49990000, 43490000, 'Apple/ip-13-promax-Green.jpg'),
-(15, 'Silver', 49990000, 43490000, 'Apple/ip-13-promax-Silver.jpg'),
+(13, '8GB 128GB', 23490000, 16),
+(13, '12GB 256GB', 26290000, 13),
+(13, '12GB 512GB', 29190000, 14),
 
-(17, 'Black', 40990000, 33390000, 'Apple/ip-13-promax-Black.jpg'),
-(17, 'Blue', 40990000, 33890000, 'Apple/ip-13-promax-Blue.jpg'),
-(17, 'Gold', 40990000, 33890000, 'Apple/ip-13-promax-Gold.jpg'),
-(17, 'Green', 39990000, 34990000, 'Apple/ip-13-promax-Green.jpg'),
-(17, 'Silver', 40990000, 33890000, 'Apple/ip-13-promax-Silver.jpg'),
+(14, '8GB 128GB', 23490000, 16),
+(14, '12GB 256GB', 26290000, 13),
+(14, '12GB 512GB', 29190000, 14),
 
-(18, 'Black', 33990000, 24990000, 'Apple/ip-13-Black.jpg'),
-(18, 'Blue', 33990000, 24990000, 'Apple/ip-13-Blue.jpg'),
-(18, 'Green', 33990000, 24990000, 'Apple/ip-13-Green.jpg'),
-(18, 'Pink', 33990000, 24990000, 'Apple/ip-13-Pink.jpg'),
-(18, 'Red', 33990000, 24990000, 'Apple/ip-13-Red.jpg'),
-(18, 'Silver', 33990000, 24990000, 'Apple/ip-13-Silver.jpg'),
+(15, '8GB 128GB', 19190000, 15),
+(15, '8GB 256GB', 20590000, 17),
 
-(19, 'Burgundy', 33990000, 26290000, 'Samsung/s22-ultra-Burgundy.jpg'),
-(19, 'Black', 33990000, 26290000, 'Samsung/s22-ultra-Black.jpg'),
-(19, 'Green', 33990000, 26290000, 'Samsung/s22-ultra-Green.jpg'),
-(19, 'White', 33990000, 26290000, 'Samsung/s22-ultra-White.jpg'),
+(16, '8GB 128GB', 23490000, 16),
+(16, '12GB 256GB', 26290000, 13),
+(16, '12GB 512GB', 29190000, 14),
 
-(20, 'Burgundy', 36990000, 29190000, 'Samsung/s22-ultra-Burgundy.jpg'),
-(20, 'Black', 36990000, 29190000, 'Samsung/s22-ultra-Black.jpg'),
-(20, 'Green', 36990000, 29190000, 'Samsung/s22-ultra-Green.jpg'),
-(20, 'White', 36990000, 29190000, 'Samsung/s22-ultra-White.jpg'),
+(17, '8GB 128GB', 19190000, 15),
+(17, '8GB 256GB', 20590000, 17),
 
+(18, '8GB 128GB', 12790000, 18),
+(18, '8GB 256GB', 13990000, 23),
 
-(21, 'Pink Gold', 25990000, 19190000, 'Samsung/s22-plus-Pink Gold.jpg'),
-(21, 'Black', 25990000, 19190000, 'Samsung/s22-plus-Black.jpg'),
-(21, 'Green', 25990000, 19190000, 'Samsung/s22-plus-Green.jpg'),
-(21, 'White', 25990000, 19190000, 'Samsung/s22-plus-White.jpg'),
+(19, '256GB', 32490000, 19),
+(19, '512GB', 35990000, 21),
 
-(22, 'Burgundy', 30990000, 23490000, 'Samsung/s22-ultra-Burgundy.jpg'),
-(22, 'Black', 30990000, 23490000, 'Samsung/s22-ultra-Black.jpg'),
-(22, 'Green', 30990000, 23490000, 'Samsung/s22-ultra-Green.jpg'),
-(22, 'White', 30990000, 23490000, 'Samsung/s22-ultra-White.jpg'),
+(20, '128GB', 18490000, 20),
+(20, '256GB',  20290000, 22),
 
-(23, 'Pink Gold', 27490000, 20590000, 'Samsung/s22-plus-Pink Gold.jpg'),
-(23, 'Black', 27490000, 20590000, 'Samsung/s22-plus-Black.jpg'),
-(23, 'Green', 27490000, 20590000, 'Samsung/s22-plus-Green.jpg'),
-(23, 'White', 27490000, 20590000, 'Samsung/s22-plus-White.jpg'),
+(21, '256GB', 32490000, 19),
+(21, '512GB', 35990000, 21),
 
+(22, '128GB', 18490000, 20),
+(22, '256GB',  20290000, 22),
 
-(24, 'Black', 16990000, 12790000, 'Samsung/s21-fe-Black.jpg'),
-(24, 'Green', 16990000, 12790000, 'Samsung/s21-fe-Green.jpg'),
-(24, 'Violet', 16990000, 12790000, 'Samsung/s21-fe-Violet.jpg'),
-(24, 'White', 16990000, 12790000, 'Samsung/s21-fe-White.jpg'),
+(23, '8GB 128GB', 12790000, 18),
+(23, '8GB 256GB', 13990000, 23),
 
+(24, '128GB', 8090000, 25),
+(24, '256GB', 8990000, 24),
 
-(25, 'Black', 41990000, 32490000, 'Samsung/z-fold3-Black.jpg'),
-(25, 'Green', 41990000, 32490000, 'Samsung/z-fold3-Green.jpg'),
-(25, 'Silver', 41990000, 31990000, 'Samsung/z-fold3-Silver.jpg'),
+(25, '128GB', 8090000, 25),
+(25, '256GB', 8990000, 24),
 
+(26, '4GB 64GB', 3690000, 27),
+(26, '4GB 128GB', 4050000, 26),
+(26, '6GB 128GB', 5090000, 28),
 
+(27, '4GB 64GB', 3690000, 27),
+(27, '4GB 128GB', 4050000, 26),
+(27, '6GB 128GB', 5090000, 28),
 
-(26, 'Cream', 24990000, 18490000, 'Samsung/z-flip3-Cream.jpg'),
-(26, 'Lavender', 24990000, 18490000, 'Samsung/z-flip3-Lavender.jpg'),
-(26, 'Black', 24990000, 18490000, 'Samsung/z-flip3-Black.jpg'),
-(26, 'Green', 24990000, 18490000, 'Samsung/z-flip3-Green.jpg'),
+(28, '4GB 64GB', 3690000, 27),
+(28, '4GB 128GB', 4050000, 26),
+(28, '6GB 128GB', 5090000, 28),
 
-(27, 'Black', 44990000, 35490000, 'Samsung/z-fold3-Black.jpg'),
-(27, 'Green', 44990000, 35490000, 'Samsung/z-fold3-Green.jpg'),
-(27, 'Silver', 44990000, 35990000, 'Samsung/z-fold3-Silver.jpg'),
+(29, '3GB 64GB', 2590000, 30),
+(29, '4GB 128GB', 2990000, 29),
 
-(28, 'Cream', 26990000, 20290000, 'Samsung/z-flip3-Cream.jpg'),
-(28, 'Lavender', 26990000, 20290000, 'Samsung/z-flip3-Lavender.jpg'),
-(28, 'Black', 26990000, 20290000, 'Samsung/z-flip3-Black.jpg'),
-(28, 'Green', 26990000, 20290000, 'Samsung/z-flip3-Green.jpg'),
+(30, '3GB 64GB', 2590000, 30),
+(30, '4GB 128GB', 2990000, 29),
 
-(29, 'Black', 18990000, 13990000, 'Samsung/s21-fe-Black.jpg'),
-(29, 'Green', 18990000, 13990000, 'Samsung/s21-fe-Green.jpg'),
-(29, 'Violet', 18990000, 13990000, 'Samsung/s21-fe-Violet.jpg'),
-(29, 'White', 18990000, 13990000, 'Samsung/s21-fe-White.jpg'),
+(31, '4GB 64GB', 3650000, 32),
+(31, '4GB 128GB', 3850000, 31),
 
-
-
-(30, 'Black', 9990000, 8990000, 'Xiaomi/xi-pocof3-Black.jpg'),
-(30, 'Blue', 9990000, 8990000, 'Xiaomi/xi-pocof3-Blue.jpg'),
-(30, 'White', 9990000, 8990000, 'Xiaomi/xi-pocof3-White.jpg'),
-
-(31, 'Black', 9090000, 8090000, 'Xiaomi/xi-pocof3-Black.jpg'),
-(31, 'Blue', 9090000, 8090000, 'Xiaomi/xi-pocof3-Blue.jpg'),
-(31, 'White', 9090000, 8090000, 'Xiaomi/xi-pocof3-White.jpg'),
-
-
-
-(32, 'Black', 4990000, 4050000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
-(32, 'Blue', 4990000, 4050000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
-(32, 'Green', 4990000, 4050000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
-
-(33, 'Black', 4690000, 3690000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
-(33, 'Blue', 4690000, 3690000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
-(33, 'Green', 4690000, 3690000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
-
-(34, 'Black', 5190000, 5090000, 'Xiaomi/xi-redmi-note11-Black.jpg'),
-(34, 'Blue', 5190000, 5090000, 'Xiaomi/xi-redmi-note11-Blue.jpg'),
-(34, 'Green', 5190000, 5090000, 'Xiaomi/xi-redmi-note11-Green.jpg'),
-
-
-(35, 'Black', 3490000, 2990000, 'Xiaomi/xi-redmi-9c-Black.jpg'),
-(35, 'Blue', 3490000, 2990000, 'Xiaomi/xi-redmi-9c-Blue.jpg'),
-(35, 'Orange', 3490000, 2990000, 'Xiaomi/xi-redmi-9c-Orange.jpg'),
-
-(36, 'Black', 2990000, 2590000, 'Xiaomi/xi-redmi-9c-Black.jpg'),
-(36, 'Blue', 2990000, 2590000, 'Xiaomi/xi-redmi-9c-Blue.jpg'),
-(36, 'Orange', 2990000, 2590000, 'Xiaomi/xi-redmi-9c-Orange.jpg'),
-
-
-(37, 'Blue', 4490000, 3850000, 'Xiaomi/xi-redmi-10-Blue.jpg'),
-(37, 'Gray', 4490000, 3850000, 'Xiaomi/xi-redmi-10-Gray.jpg'),
-(37, 'White', 4490000, 3850000, 'Xiaomi/xi-redmi-10-White.jpg'),
-
-(38, 'Blue', 4390000, 36500000, 'Xiaomi/xi-redmi-10-Blue.jpg'),
-(38, 'Gray', 4390000, 36500000, 'Xiaomi/xi-redmi-10-Gray.jpg'),
-(38, 'White', 4390000, 36500000, 'Xiaomi/xi-redmi-10-White.jpg');
+(31, '4GB 64GB', 3650000, 32),
+(31, '4GB 128GB', 3850000, 31);

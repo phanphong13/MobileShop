@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile Shop</title>
+    <title><?php if (isset($result) && $result !== NULL) echo $result[0]['name'];?></title>
     <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
@@ -356,7 +356,7 @@
             <!-- header -->
             <div class="product__brief-header">
               <div class="product__brief-name">
-                <!-- iPhone 13 Pro Max 128GB cũ 99% | Chính hãng VN/A -->
+                <!-- Name product -->
                 <?php if (isset($result) && $result !== NULL) echo $result[0]['name'];?>
               </div>
               <div class="product__brief-rating">
@@ -407,8 +407,8 @@
                     <!-- price -->
                     <div class="product__purchase-price">
                       <div class="product-price">
-                        <div class="product-price-origin">27,000,000 ₫</div>
-                        <div class="product-price-current">25,990,000 ₫</div>
+                        <div class="product-price-origin"><?php if (isset($result) && $result !== NULL) echo number_format($result[0]['price'],0,'',',').'đ' ?></div>
+                        <div class="product-price-current"></div>
                       </div>
                       <div class="product-installment">
                         Trả góp từ 5.098.000₫ / 1 tháng
@@ -441,28 +441,11 @@
                                 <div class="purchase-item-info">
                                   <div class="purchase-item-title"><?php echo $info[$i]['color']; ?></div>
                                   <div class="purchase-item-price">
-                                    <?php echo number_format($info[$i]['price_color'],0,'',',').'đ'; ?>
+                                    <?php echo number_format($info[$i]['sale_price_color'],0,'',',').'đ'; ?>
                                 </div>
                               </div>
                             </div>
                           </li>
-                          <!-- <li class="col l-4 m-6 c-6 product__purchase-option-item">
-                            <div color="gray" class="purchase-item purchase-item-color">
-                              <div class="l-2-4 c-3">
-                                <img
-                                  src="Assets/Img/Products/Apple/ip-13-pro-max-gray.png"
-                                  alt=""
-                                  class="purchase-item-img"
-                                />
-                              </div>
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">Gray</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li> -->
                           
                         <?php 
                             }
@@ -472,58 +455,30 @@
 
                       </div>
 
-                      <!-- vertion -->
+                      <!-- version -->
                       <div class="product__option-vertion">
                         <div class="product__option-title">Phiên bản khác</div>
                         <ul class="row product__purchase-option-list">
-                          <li
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div class="purchase-item purchase-item-memory">
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">128GB</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
+                          <?php 
+                            if (isset($version)) {
+                              for ($i = 0; $i < count($version); $i++) {
+                          ?>
+                            <li class="col l-4 m-6 c-6 product__purchase-option-item">
+                              <a href="?controller=product&id_product=<?php echo $version[$i]['version_id'] ?>">
+                                <div class="purchase-item purchase-item-memory">
+                                  <div class="purchase-item-info">
+                                    <div class="purchase-item-title"><?php echo $version[$i]['version'] ?></div>
+                                    <div class="purchase-item-price">
+                                      <?php echo number_format($version[$i]['price_version'],0,'',',').'đ'; ?>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div class="purchase-item purchase-item-memory">
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">256GB</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div class="purchase-item purchase-item-memory">
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">512GB</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <li
-                            class="col l-4 m-6 c-6 product__purchase-option-item"
-                          >
-                            <div class="purchase-item purchase-item-memory">
-                              <div class="purchase-item-info">
-                                <div class="purchase-item-title">1TGB</div>
-                                <div class="purchase-item-price">
-                                  25,990,000 ₫
-                                </div>
-                              </div>
-                            </div>
-                          </li>
+                              </a>
+                            </li>
+                          <?php
+                              }
+                            }
+                          ?>
                         </ul>
                       </div>
                     </div>
