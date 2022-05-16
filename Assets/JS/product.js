@@ -103,3 +103,25 @@ for (let i = 0; i < productColors.length; i++) (function(i){
 function removeBlurBackground(pColor) {
     pColor.classList.add('purchase-item--clicked')
 }
+
+
+function orders(id_product) {
+    var productColorSelect = document.querySelector('.product__purchase-option-item').getAttribute('color');
+    // console.log(productColorSelect)
+    // console.log(id_product)
+    $.ajax({
+        url : "ajax/order.php",
+		type : "post",
+        data : {
+            'id_product' : id_product,
+            'color' : productColorSelect
+        },
+        dataType : 'text',
+        success: function(result){
+            alert("Thêm vào giỏ hàng thành công");
+        },
+        error : function(result) {
+            alert("Thêm vào giỏ hàng thất bại");      
+        }
+    })
+}

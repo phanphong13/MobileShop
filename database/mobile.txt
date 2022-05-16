@@ -799,3 +799,15 @@ INSERT INTO `product_info` (`product_id`, `name`, `value`) VALUES
     (31, 'Hệ điều hành', 'Android 11'),
     (31, 'Dung lượng pin', '5.000mAh'),
     (31, 'Sạc nhanh', 'sạc nhanh 18W');
+
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `account_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `num` int(11) NOT NULL,
+  `color` varchar(20) NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (product_id) REFERENCES products(id),
+  FOREIGN KEY (account_id) REFERENCES accounts(id)
+);

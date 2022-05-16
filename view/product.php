@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title><?php if (isset($result) && $result !== NULL) echo $result[0]['name'];?></title>
     <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png" />
     <link
@@ -324,7 +325,7 @@
                     <!-- buy button -->
                     <div class="product__buy">
                       <!-- buy product -->
-                      <button class="btn buy-btn__product product__buy-btn">
+                      <button onclick="orders(<?php echo $id ?>)" class="btn buy-btn__product product__buy-btn">
                         <div class="product__buy-btn-title">Mua ngay</div>
                         <div class="div payment-method">
                           (Nhận tại cửa hàng hoặc giao tận nhà)
