@@ -142,6 +142,9 @@ if (modal__overlay__login) {
         if (modal__resetPassword) {
             modal__resetPassword.setAttribute("style", "display: none;");
         }
+        if (userInfo) {
+            userInfo.classList.remove("display");
+        }
     }
 
 }

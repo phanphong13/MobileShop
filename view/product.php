@@ -655,7 +655,27 @@
       <!-- footer -->
       <?php include 'footer.php'; ?>
     </div>
+    <div id="backtop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
 
     <script src="Assets/JS/product.js"></script>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <script>
+         $(document).ready(function() {
+             $(window).scroll(function() {
+                 if($(this).scrollTop()) {
+                     $('#backtop').fadeIn();
+                 } else {
+                     $('#backtop').fadeOut();
+                 }
+             });
+             $('#backtop').click(function() {
+                 $('html, body').animate({
+                     scrollTop: 0
+                }, 400);
+             })
+         })
+     </script>
 </html>
