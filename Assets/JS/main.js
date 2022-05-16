@@ -293,55 +293,5 @@ function validator(formSelector) {
             }
         }
 
-    }
-    
+    }   
 }
-
-// show more
-
-let showMore = document.querySelector('.show-more')
-let showMoreBtn = document.querySelector('.show-more-btn');
-let detailComponents = document.querySelector('.product__detail-components');    
-  
-
-if(showMoreBtn) {
-    showMoreBtn.onclick = function() {
-        detailComponents.classList.remove('detail__components-no-full');
-        showMore.style.display = "none";
-    }
-
-}
-
-// change color
-let productColors = document.getElementsByClassName('purchase-item-color');
-let productPrices = document.getElementsByClassName('purchase-item-price');
-let productMemories = document.getElementsByClassName('purchase-item-memory');
-let productImg = document.querySelector('.product__purchase-option-item');
-// let productOrigin = document.querySelector('.product-price-origin');
-let productPriceCurrent = document.querySelector('.product-price-current');
-
-
-let productSelectCurrent = productColors[0];
-productColors[0].classList.add('purchase-item--clicked')
-productImg.setAttribute('color', productColors[0].getAttribute('color'));
-productImg.setAttribute('src', `Assets/Img/Products/${productImg.getAttribute('vendor')}/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.jpg`)
-productPriceCurrent.innerText = productPrices[0].innerText;
-
-
-for (let i = 0; i < productColors.length; i++) (function(i){
-    productColors[i].addEventListener("click", function() {
-        productColors[i].classList.add('purchase-item--clicked');
-        productSelectCurrent.classList.remove('purchase-item--clicked');
-        productImg.setAttribute('color', productColors[i].getAttribute('color'));
-        productImg.setAttribute('src', `Assets/Img/Products/${productImg.getAttribute('vendor')}/${productImg.getAttribute('id')}-${productImg.getAttribute('color')}.jpg`)
-        productPriceCurrent.innerText = productPrices[i].innerText;
-        productSelectCurrent = productColors[i];
-    });
-})(i);
-
-
-function removeBlurBackground(pColor) {
-    pColor.classList.add('purchase-item--clicked')
-}
-
-console.log(a)

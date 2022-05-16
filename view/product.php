@@ -28,226 +28,7 @@
     <div class="ap">
 
       <!-- header -->
-      <div id="header">
-        <div class="header-wrapper">
-          <div class="header__logo">
-            <div class="header__logo-img">
-              <img src="Assets/Img/Header/Logo/clickbuy.png" alt="" />
-            </div>
-          </div>
-
-          <div class="header__search">
-            <div class="header__search-wrapper">
-              <input
-                type="text"
-                class="header__search-input"
-                placeholder="Tìm kiếm sản phẩm..."
-              />
-              <div class="header__search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="header__right">
-            <div class="header__user">
-              <div class="header__right-icon">
-                <i class="fa-solid fa-user"></i>
-              </div>
-              <span class="header__right-text"> Tài Khoản </span>
-            </div>
-            <div class="header__cart">
-              <div class="header__right-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-              <span class="header__right-text"> Giỏ hàng </span>
-              <div class="header__right-triangle"></div>
-              <div class="header__cart-products">
-                <span class="header__cart-products-header"
-                  >Sản phẩm của bạn</span
-                >
-                <ul class="header__cart-products-list">
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="header__cart-products-item">
-                    <div class="header__cart-products-item-img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="header__cart-products-item-body">
-                      <div class="header__cart-products-item-body-top">
-                        <div class="header__cart-products-item-text">
-                          Iphone 13 Pro Max - Chinh Hang VNA
-                        </div>
-                      </div>
-                      <div class="header__cart-products-item-body-bottom">
-                        <div class="header__cart-products-item-price">
-                          <span class="header__cart-products-item-price-price">
-                            15,999,000 đ
-                          </span>
-                          <span class="header__cart-products-item-price-mul">
-                            x </span
-                          ><span class="header__cart-products-item-price-qnt">
-                            1
-                          </span>
-                        </div>
-
-                        <div class="header__cart-products-item-delete">Xóa</div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="header__cart-products-orderAll">Xem giỏ hàng</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php include "header.php"?>
 
       <!-- breadcrumb -->
       <div id="breadcrumb">
@@ -290,7 +71,7 @@
                         </a>
                       </li>
       
-                      <li class="breadcrumb__menu-item">
+                      <!-- <li class="breadcrumb__menu-item">
                         <a href="#" class="breadcrumb__menu-item-link">
                           <div class="breadcrumb__menu-item-icon">
                             <i class="fa-solid fa-tablet-screen-button"></i>
@@ -315,7 +96,7 @@
                           </div>
                           <div class="breadcrumb__menu-item--title">Đồ cũ</div>
                         </a>
-                      </li>
+                      </li> -->
                     </ul>
                   </div>
                 </div>
@@ -330,16 +111,14 @@
                   </li>
       
                   <li class="breadcrumb__list-item">
-                    <i
-                      class="fa-solid fa-angles-right breadcrumb breadcrumb__list-item-icon"
-                    ></i>
+                    <i class="fa-solid fa-angles-right breadcrumb breadcrumb__list-item-icon"></i>
                   </li>
 
-                  <li class="breadcrumb__list-item">
-                    <div href="#" class="breadcrumb__list-item-current">
+                  <!-- <li class="breadcrumb__list-item">
+                    <div class="breadcrumb__list-item-current">
                       Iphone 13 Series
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             <!-- </div> -->
@@ -377,12 +156,22 @@
                   <!-- img -->
                   <div class="product__info-img">
                     <div class="product__info--img">
-                      <img
-                        vendor="<?php if (isset($result) && $result !== NULL) echo $result[0]['vendor'];?>"
-                        id="<?php if (isset($result) && $result !== NULL) echo $result[0]['name_img'];?>"
-                        class="product__purchase-option-item"
-                        alt=""
-                      />
+                      <?php 
+                        if (isset($result) && $result !== NULL) {
+                          $name_vendor = $result[0]['vendor'];
+                          $name_img = $result[0]['name_img'];
+                        
+                        echo $html = '<img
+                          vendor="'.$name_vendor.'"
+                          id="'.$name_img.'"
+                          class="product__purchase-option-item"
+                          alt=""
+                        />';
+
+                        
+                        }
+                      ?>
+                      
                     </div>
                   </div>
 
@@ -425,23 +214,23 @@
                         </div>
                         <ul class="row product__purchase-option-list">
                         <?php 
-                          if (isset($info)) {
-                            for ($i = 0; $i < count($info); $i++) { 
+                          if (isset($color)) {
+                            for ($i = 0; $i < count($color); $i++) { 
                         ?>
                           <li class="col l-4 m-6 c-6 product__purchase-option-item">
-                            <div color="<?php echo $info[$i]['color']; ?>" class="purchase-item purchase-item-color">
+                            <div color="<?php echo $color[$i]['color']; ?>" class="purchase-item purchase-item-color">
                               <div class="l-2-4 c-3">
                                 <img
-                                    src="Assets/Img/Products/<?php echo $info[$i]['link_img']?>"
+                                    src="Assets/Img/Products/<?php echo $color[$i]['link_img']?>"
                                     
                                     alt=""
                                     class="purchase-item-img"
                                   />
                                 </div>
                                 <div class="purchase-item-info">
-                                  <div class="purchase-item-title"><?php echo $info[$i]['color']; ?></div>
+                                  <div class="purchase-item-title"><?php echo $color[$i]['color']; ?></div>
                                   <div class="purchase-item-price">
-                                    <?php echo number_format($info[$i]['sale_price_color'],0,'',',').'đ'; ?>
+                                    <?php echo number_format($color[$i]['sale_price_color'],0,'',',').'đ'; ?>
                                 </div>
                               </div>
                             </div>
@@ -499,47 +288,35 @@
                           <span class="promotion__item-icon">
                             <i class="fa-solid fa-gift"></i>
                           </span>
-                          <a href="" class="promotion__item-link"
-                            >Tặng củ sạc Apple 20W chính hãng trị giá
-                            790.000đ</a
-                          >
+                          <a href="" class="promotion__item-link">Đăng ký khuyến mãi - Giảm thêm 100.000đ </a>
                         </li>
 
                         <li class="product__promotion-item">
                           <span class="promotion__item-icon">
                             <i class="fa-solid fa-gift"></i>
                           </span>
-                          <a href="" class="promotion__item-link"
-                            >Thu cũ đổi mới - Trợ giá 1.000.000đ</a
-                          >
+                          <a href="" class="promotion__item-link">Thu cũ đổi mới - Trợ giá 1.000.000đ</a>
                         </li>
 
                         <li class="product__promotion-item">
                           <span class="promotion__item-icon">
                             <i class="fa-solid fa-gift"></i>
                           </span>
-                          <a href="" class="promotion__item-link"
-                            >Tặng Phiếu mua hàng 600.000đ ( áp dụng khi mua Ốp
-                            lưng chính hãng)</a
-                          >
+                          <a href="" class="promotion__item-link">Tặng Phiếu mua hàng 600.000đ ( áp dụng khi mua Ốp lưng chính hãng)</a>
                         </li>
 
                         <li class="product__promotion-item">
                           <span class="promotion__item-icon">
                             <i class="fa-solid fa-gift"></i>
                           </span>
-                          <a href="" class="promotion__item-link"
-                            >Giảm 100.000đ khi mua kèm tai nghe Air Pods</a
-                          >
+                          <a href="" class="promotion__item-link">Tặng Voucher giảm 200.000đ khi mua Laptop</a>
                         </li>
 
                         <li class="product__promotion-item">
                           <span class="promotion__item-icon">
                             <i class="fa-solid fa-gift"></i>
                           </span>
-                          <a href="" class="promotion__item-link"
-                            >Giảm 100.000đ khi mua kèm Apple Watch</a
-                          >
+                          <a href="" class="promotion__item-link">Giảm giá 5% khi mua phụ kiện</a>
                         </li>
                       </ul>
                     </div>
@@ -610,140 +387,30 @@
                       THÔNG SỐ KỸ THUẬT
                     </h1>
                     <table class="product__specifications-table">
-                      <tr class="specifications__table-row table-row-odd">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Kích thước màn hình
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          6.7 inches
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Độ phân giải màn hình
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          2778 x 1284 pixel
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          CPU
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          Apple A15
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Bộ nhớ trong
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          128 GB
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Camera chính
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          Camera góc rộng: 12MP, ƒ/1.5, Camera góc siêu rộng:
-                          12MP, ƒ/1.8, Camera tele : 12MP, /2.8
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Camera phụ
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          12MP, ƒ/2.2
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Hệ điều hành
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          IOS 15
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Dung lượng pin
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          4,325mAh
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Tính năng đặc biệt
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          Hỗ trợ 5G, Kháng nước, kháng bụi, Sạc không dây, Nhận
-                          diện khuôn mặt
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Tình trạng máy
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          New
-                        </td>
-                      </tr>
-                      <tr class="specifications__table-row table-row-even">
-                        <th
-                          class="specifications__table-col specifications__table-label"
-                        >
-                          Thương hiệu
-                        </th>
-                        <td
-                          class="specifications__table-col specifications__table-text"
-                        >
-                          Apple
-                        </td>
-                      </tr>
+                      <?php 
+                        if (isset($info)) {
+                          for ($i = 0; $i < count($info); $i++) {
+                            if ($i % 2 == 0) {
+                      ?>
+                        <tr class="specifications__table-row table-row-odd">
+                          <th class="specifications__table-col specifications__table-label"><?php echo $info[$i]['name']?></th>
+                          <td class="specifications__table-col specifications__table-text"><?php echo $info[$i]['value']?></td>
+                        </tr>
+                      <?php
+                            }
+                            else {
+                      ?>
+                        <tr class="specifications__table-row table-row-even">
+                          <th class="specifications__table-col specifications__table-label"><?php echo $info[$i]['name']?></th>
+                          <td class="specifications__table-col specifications__table-text"><?php echo $info[$i]['value']?></td>
+                        </tr>
+                      <?php
+                            }
+                          }
+                        }
+                      ?>
+                      
+                      
                     </table>
                   </div>
                 </div>
@@ -951,7 +618,7 @@
             <!-- related body -->
             <div class="body">
               <div class="row">
-                <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
+                <!-- <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
                   <div class="product">
                     <a href="#" class="product__img">
                       <img
@@ -973,99 +640,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
-                  <div class="product">
-                    <a href="#" class="product__img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" class="product__description">
-                      <span>
-                        Iphone 13 Pro Max - Chính hãng VN/A Iphone 13 Pro Max -
-                        Chính hãng VN/A Iphone 13 Pro Max - Chính hãng VN/A
-                      </span>
-                    </a>
-                    <div class="product__price">18,000,000đ</div>
-                    <div class="product__price-sale">
-                      <div>15,999,000đ</div>
-                      <div class="product__price-sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
-                  <div class="product">
-                    <a href="#" class="product__img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" class="product__description">
-                      <span>
-                        Iphone 13 Pro Max - Chính hãng VN/A Iphone 13 Pro Max -
-                        Chính hãng VN/A Iphone 13 Pro Max - Chính hãng VN/A
-                      </span>
-                    </a>
-                    <div class="product__price">18,000,000đ</div>
-                    <div class="product__price-sale">
-                      <div>15,999,000đ</div>
-                      <div class="product__price-sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
-                  <div class="product">
-                    <a href="#" class="product__img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" class="product__description">
-                      <span>
-                        Iphone 13 Pro Max - Chính hãng VN/A Iphone 13 Pro Max -
-                        Chính hãng VN/A Iphone 13 Pro Max - Chính hãng VN/A
-                      </span>
-                    </a>
-                    <div class="product__price">18,000,000đ</div>
-                    <div class="product__price-sale">
-                      <div>15,999,000đ</div>
-                      <div class="product__price-sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
-                  <div class="product">
-                    <a href="#" class="product__img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" class="product__description">
-                      <span>
-                        Iphone 13 Pro Max - Chính hãng VN/A Iphone 13 Pro Max -
-                        Chính hãng VN/A Iphone 13 Pro Max - Chính hãng VN/A
-                      </span>
-                    </a>
-                    <div class="product__price">18,000,000đ</div>
-                    <div class="product__price-sale">
-                      <div>15,999,000đ</div>
-                      <div class="product__price-sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -1078,48 +653,9 @@
       </div>
 
       <!-- footer -->
-      <div id="footer">
-        <div class="footer__list">
-          <a href="#" class="footer__list-item">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="#" class="footer__list-item">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" class="footer__list-item">
-            <i class="fa-brands fa-yahoo"></i>
-          </a>
-          <a href="#" class="footer__list-item">
-            <i class="fa-brands fa-pinterest"></i>
-          </a>
-          <a href="" class="footer__list-item">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="" class="footer__list-item">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="footer__content">
-          <p class="footer__content-text">
-            Powered by
-            <a href="" class="footer__content-link"> Group 8 </a>
-          </p>
-        </div>
-      </div>
+      <?php include 'footer.php'; ?>
     </div>
 
-
-    <script> 
-      let numOfColors = 'code php';
-      let products = [];
-      let obj = {
-          memory: 'code php',
-          color : 'code php',
-          priceOrigin: 'code php',
-          priceCurrent : 'code php'
-        };
-      products.push(obj);
-    </script>
-    <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/product.js"></script>
   </body>
 </html>

@@ -11,12 +11,17 @@
 			if($result === false) die("Failed get product");
 
 			// get product color
-			$info = $this->model->query("select * from `product_detail` where product_id = {$result[0]['id']};", true);
-			if ($info === false) die("Failed get product detail");
+			$color = $this->model->query("select * from `product_color` where product_id = {$result[0]['id']};", true);
+			if ($color === false) die("Failed get product detail");
 
 			// get version
 			$version = $this->model->query("select * from `product_version` where product_id = {$result[0]['id']};", true);
 			if ($version === false) die("Failed get version");
+
+
+			// get info about product
+			$info = $this->model->query("select * from `product_info` where product_id = {$result[0]['id']};", true);
+			if ($info === false) die("Failed get version");
 
 						
             include "./view/product.php";
