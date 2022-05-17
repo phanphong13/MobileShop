@@ -397,6 +397,7 @@ html {
 .buy-btn__product {
     background-color: var(--primary-color);
     flex: 1;
+    text-decoration: none;
     /* width: calc(100% - 8px); */
 }
 

@@ -28,6 +28,10 @@
 			$product_orders = $this->model->query($orderSql,true);
 			if ($product_orders === false) die("Failed");
 
+			//get similar product
+			$vendor = $result[0]['vendor'];
+			$sql = "SELECT * FROM products WHERE vendor = '$vendor' AND id != {$id} LIMIT 5";
+			$similar = $this->model->query($sql,true);
 						
             include "./view/product.php";
 		}

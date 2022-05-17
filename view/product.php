@@ -157,22 +157,12 @@
                   <!-- img -->
                   <div class="product__info-img">
                     <div class="product__info--img">
-                      <?php 
-                        if (isset($result) && $result !== NULL) {
-                          $name_vendor = $result[0]['vendor'];
-                          $name_img = $result[0]['name_img'];
-                        
-                        echo $html = '<img
-                          vendor="'.$name_vendor.'"
-                          id="'.$name_img.'"
+                        <img
+                          vendor="<?php if (isset($result) && $result !== NULL) echo $result[0]['vendor'] ?>"
+                          id="<?php if (isset($result) && $result !== NULL) echo $result[0]['name_img'] ?>"
                           class="product__purchase-option-item"
                           alt=""
-                        />';
-
-                        
-                        }
-                      ?>
-                      
+                        />
                     </div>
                   </div>
 
@@ -200,9 +190,9 @@
                         <div class="product-price-origin"><?php if (isset($result) && $result !== NULL) echo number_format($result[0]['price'],0,'',',').'đ' ?></div>
                         <div class="product-price-current"></div>
                       </div>
-                      <div class="product-installment">
+                      <!-- <div class="product-installment">
                         Trả góp từ 5.098.000₫ / 1 tháng
-                      </div>
+                      </div> -->
                     </div>
 
                     <!-- option -->
@@ -619,29 +609,37 @@
             <!-- related body -->
             <div class="body">
               <div class="row">
-                <!-- <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
+                <?php 
+                  if (isset($similar)) {
+                    for ($i = 0; $i < count($similar); $i++) {
+                ?>
+                  <div class="col l-2-4 m-3 c-5" style="margin-top: 15px">
                   <div class="product">
-                    <a href="#" class="product__img">
-                      <img
-                        src="Assets/Img/Products/Apple/13promax.jpg"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" class="product__description">
-                      <span>
-                        Iphone 13 Pro Max - Chính hãng VN/A Iphone 13 Pro Max -
-                        Chính hãng VN/A Iphone 13 Pro Max - Chính hãng VN/A
-                      </span>
-                    </a>
-                    <div class="product__price">18,000,000đ</div>
-                    <div class="product__price-sale">
-                      <div>15,999,000đ</div>
-                      <div class="product__price-sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                      <div class="product-like">Yêu thích</div>
+                      <a href="?controller=product&id_product=<?php echo $similar[$i]['id'] ?>" class="product__img">
+                          <img src="Assets/Img/Products/<?php echo $similar[$i]['vendor'] .'/'. $similar[$i]['link_img'] ?>" alt="">
+                      </a>
+                      <a href="?controller=product&id_product=<?php echo $similar[$i]['id'] ?>" class="product__description">
+                          <span>
+                              <?php echo $similar[$i]['name'] ?>
+                          </span>
+                      </a>
+                      <div class="product__price"><?php if ($similar[$i]['price'] != 0) echo number_format($similar[$i]['price'],0,'',',').'đ'; ?></div>
+                      <div class="product__price-sale">
+                          <div>
+                              <?php echo number_format($similar[$i]['sale_price'],0,'',',').'đ'; ?>
+                          </div>
+                          <div class="product__price-sale-icon"> 
+                              <i class="fa-solid fa-cart-shopping"></i>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                </div> -->
+                </div>
+                <?php
+                    }
+                  }
+                ?>
+                
               </div>
             </div>
           </div>
@@ -661,6 +659,7 @@
     </div>
 
     <script src="Assets/JS/product.js"></script>
+    <script src="Assets/JS/delete.js"></script>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
      <script>

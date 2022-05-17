@@ -41,8 +41,8 @@
 					$alert = "Email sai";
 				} else {
 					if($result[0]['password'] == $password) {
-						 // $_SESSION['name'] = $result[0]['name'];
-							// $_SESSION['email'] = $email;
+						 	$_SESSION['name'] = $result[0]['name'];
+							$_SESSION['email'] = $email;
 							$_SESSION['id_account'] = $result[0]['id'];
 						header("Location: index.php?controller=home");
 					} else {

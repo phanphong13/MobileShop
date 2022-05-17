@@ -313,6 +313,7 @@ function validator(formSelector) {
     }   
 }
 
+
 setInterval(function() {
     btnCart.classList.add('shake');
     setTimeout(function() {

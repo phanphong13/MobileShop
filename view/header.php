@@ -1,9 +1,9 @@
 <div id="header">
            <div class="header-wrapper">
                <div class="header__logo">
-                   <div class="header__logo-img">
+                   <a href="?controller=home"class="header__logo-img">
                         <img src="Assets/Img/Header/Logo/clickbuy.png" alt="">
-                   </div>
+                   </a>
                </div>
 
                <div class="header__search">
@@ -26,7 +26,11 @@
                         
                         <div class="header__user-info">
                             <span class="header__user-info--email">
-                                tranmanh2672002@gmail.com
+                            <?php 
+                                if (isset($_SESSION['email'])) {
+                                    echo $_SESSION['email'];
+                                }
+                            ?>
                             </span>
 
                             <span class="header__user-info--resetPassword">
@@ -93,7 +97,19 @@
                         <span class="header__right-text">
                             Giỏ hàng
                         </span>
-                        <div class="header__cart-number">0</div>
+                        <div class="header__cart-number">
+                             <?php
+                                    if ($product_orders) {
+                                        $num_product = 0;
+                                        for ($i = 0; $i < count($product_orders); $i++) {
+                                            $num_product += $product_orders[$i]['num'];
+                                        }
+                                        echo $num_product;
+                                    } else {
+                                        echo 0;
+                                    }
+                            ?>
+                        </div>
                         <div class="header__cart-products">
                             <span class="header__cart-products-header">Sản phẩm của bạn</span>
                             <ul class="header__cart-products-list">
@@ -122,20 +138,15 @@
                                                             </span>
                                                         </div>
                 
-                                                        <div class="header__cart-products-item-delete">
+                                                        <a href=""onclick="deleteOrder(<?php echo $product_orders[$i]['id'] ?>)" class="header__cart-products-item-delete">
                                                             Xóa
-                                                        </div>
+                                                        </a>
                                                         
                                                     </div>
                                                 </div>
                                             </li>
                                 <?php
                                         }
-                                ?>
-                                        <div class="header__cart-products-orderAll">
-                                            Thanh toán
-                                        </div>
-                                <?php
                                     } else {
                                 ?>
                                         <li class="header__cart-products-item">
@@ -147,14 +158,16 @@
                                 <?php
                                     }
                                 ?>
-                                
-                                
-                                
-                                
-    
-                                
-                                
                             </ul>
+                            <?php 
+                                if (isset($product_orders)) {
+                                    ?>
+                                    <div class="header__cart-products-orderAll">
+                                            Thanh toán
+                                    </div>
+                                    <?php
+                                }
+                            ?>
 
                         </div>
                     </div>
