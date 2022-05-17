@@ -130,50 +130,31 @@
                                             </li>
                                 <?php
                                         }
+                                ?>
+                                        <div class="header__cart-products-orderAll">
+                                            Thanh toán
+                                        </div>
+                                <?php
+                                    } else {
+                                ?>
+                                        <li class="header__cart-products-item">
+                                            <div class="header__cart-products-item-noProduct">
+                                                <span>Giỏ hàng trống, vui lòng đặt hàng</span>
+                                            </div>
+                                            
+                                        </li>
+                                <?php
                                     }
                                 ?>
                                 
-                                <!-- <li class="header__cart-products-item">
-                                    <div class="header__cart-products-item-img">
-                                        <img src="Assets/Img/Products/Apple/13promax.jpg" alt="">
-                                    </div>
-                                    <div class="header__cart-products-item-body">
-                                        <div class="header__cart-products-item-body-top">
-                                            <div class="header__cart-products-item-text">Iphone 13 Pro Max - Chinh Hang VNA</div>
-                                        </div>
-                                        <div class="header__cart-products-item-body-bottom">
-                                            <div class="header__cart-products-item-price">
-                                                <span class="header__cart-products-item-price-price">
-                                                    15,999,000 đ
-                                                </span>
-                                                <span class="header__cart-products-item-price-mul">
-                                                    x
-                                                </span><span class="header__cart-products-item-price-qnt">
-                                                    1
-                                                </span>
-                                            </div>
-    
-                                            <div class="header__cart-products-item-delete">
-                                                Xóa
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </li> -->
                                 
-                                <!-- <li class="header__cart-products-item">
-                                    <div class="header__cart-products-item-noProduct">
-                                        <span>Giỏ hàng trống, vui lòng đặt hàng</span>
-                                    </div>
-                                    
-                                </li> -->
+                                
+                                
     
                                 
                                 
                             </ul>
-                            <div class="header__cart-products-orderAll">
-                                Xem giỏ hàng
-                            </div>
+
                         </div>
                     </div>
                </div>

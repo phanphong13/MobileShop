@@ -326,7 +326,7 @@
                     <div class="product__buy">
                       <!-- buy product -->
                       <a href="" onclick="orders(<?php echo $id ?>)" class="btn buy-btn__product product__buy-btn">
-                        <div class="product__buy-btn-title">Mua ngay</div>
+                        <div class="product__buy-btn-title">Thêm vào giỏ hàng</div>
                         <div class="div payment-method">
                           (Nhận tại cửa hàng hoặc giao tận nhà)
                         </div>
