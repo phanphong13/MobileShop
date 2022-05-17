@@ -455,6 +455,23 @@ input[name = "show-modal-register"] {
     position: relative;
 }
 
+.shake {
+    animation: shakeCart .4s ease-in-out forwards;
+}
+
+.header__cart-number {
+    position: absolute;
+    width: 15px;
+    font-size: 1.2rem;
+    background-color: var(--white-color);
+    text-align: center;
+    color: var(--primary-color);
+    border-radius: 50%;
+    float: right;
+    top: -5px;
+    right: 8px;
+}
+
 .header__right-icon {
     color: var(--white-color);
     font-size: 2rem;
