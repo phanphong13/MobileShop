@@ -128,3 +128,10 @@ function orders(id_product) {
         }
     })
 }
+
+setInterval(function() {
+    btnCart.classList.add('shake');
+    setTimeout(function() {
+        btnCart.classList.remove('shake');
+    }, 500)
+}, 2000)

@@ -312,3 +312,10 @@ function validator(formSelector) {
 
     }   
 }
+
+setInterval(function() {
+    btnCart.classList.add('shake');
+    setTimeout(function() {
+        btnCart.classList.remove('shake');
+    }, 500)
+}, 2000)

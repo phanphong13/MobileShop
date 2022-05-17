@@ -93,6 +93,7 @@
                         <span class="header__right-text">
                             Giỏ hàng
                         </span>
+                        <div class="header__cart-number">0</div>
                         <div class="header__cart-products">
                             <span class="header__cart-products-header">Sản phẩm của bạn</span>
                             <ul class="header__cart-products-list">
