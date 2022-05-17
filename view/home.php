@@ -9,15 +9,20 @@
     <link rel="icon" href="Assets/Img/Header/Logo/clickbuy.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="Assets/CSS/base.css">
     <link rel="stylesheet" href="Assets/CSS/grid.css">
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="Assets/JS/search.js"></script>
 </head>
 <body>
     <div class="app">
         <!-- header -->
-        <?php include "header.php"?>
+        <?php 
+        include "header.php";
+        include 'ajax/ProductSearch.php';
+        ?>
 
     
         <div id="container">
@@ -104,38 +109,38 @@
                                     <ul>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a1">
-                                                <input type="radio" name="a" id="a1" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="a" id="a1" value = 0 class="gird__sidebar-list-item-input productDetail price">
                                                 <span class="gird__sidebar-list-item-text">Tất cả</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a2">
-                                                <input type="radio" name="a" id="a2" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="a" id="a2" value = 1 class="gird__sidebar-list-item-input productDetail price">
                                                 <span class="gird__sidebar-list-item-text">Nhỏ hơn 5,000,000₫</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a3">
-                                                <input type="radio" name="a" id="a3" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="a" id="a3" value = 2 class="gird__sidebar-list-item-input productDetail price">
                                                 <span class="gird__sidebar-list-item-text">Từ 5,000,000₫ - 10,000,000₫</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a4">
-                                                <input type="radio" name="a" id="a4" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="a" id="a4" value = 3 class="gird__sidebar-list-item-input productDetail price">
                                                 <span class="gird__sidebar-list-item-text">Từ 10,000,000₫ - 15,000,000₫</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a5">
-                                                <input type="radio" name="a" id="a5" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="a" id="a5" value = 4 class="gird__sidebar-list-item-input productDetail price">
                                                 <span class="gird__sidebar-list-item-text">Từ 15,000,000₫ - 20,000,000₫</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="a6">
-                                                <input type="radio" name="a" id="a6" class="gird__sidebar-list-item-input">
-                                                <span class="gird__sidebar-list-item-text">Lớn hơn 30,000,000₫</span>
+                                                <input type="radio" name="a" id="a6" value = 5 class="gird__sidebar-list-item-input productDetail price">
+                                                <span class="gird__sidebar-list-item-text">Lớn hơn 20,000,000₫</span>
                                             </label>
                                         </li>
                                     </ul>
@@ -152,25 +157,25 @@
                                     <ul>
                                         <li class="gird__sidebar-list-item">
                                             <label for="b1">
-                                                <input type="radio" name="b" id="b1" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="b" id="b1" value = "Apple"  class="gird__sidebar-list-item-input productDetail brand">
                                                 <span class="gird__sidebar-list-item-text">Apple</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="b2">
-                                                <input type="radio" name="b" id="b2" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="b" id="b2" value = "Samsung" class="gird__sidebar-list-item-input productDetail brand">
                                                 <span class="gird__sidebar-list-item-text">Samsung</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="b3">
-                                                <input type="radio" name="b" id="b3" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="b" id="b3" value = "Oppo" class="gird__sidebar-list-item-input productDetail brand">
                                                 <span class="gird__sidebar-list-item-text">Oppo</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="b4">
-                                                <input type="radio" name="b" id="b4" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="b" id="b4" value = "Xiaomi" class="gird__sidebar-list-item-input productDetail brand">
                                                 <span class="gird__sidebar-list-item-text">Xiaomi</span>
                                             </label>
                                         </li>
@@ -189,38 +194,32 @@
                                     <ul>
                                         <li class="gird__sidebar-list-item">
                                             <label for="c1">
-                                                <input type="radio" name="c" id="c1" class="gird__sidebar-list-item-input">
-                                                <span class="gird__sidebar-list-item-text">1GB</span>
-                                            </label>
-                                        </li>
-                                        <li class="gird__sidebar-list-item">
-                                            <label for="c2">
-                                                <input type="radio" name="c" id="c2" class="gird__sidebar-list-item-input">
-                                                <span class="gird__sidebar-list-item-text">2GB</span>
-                                            </label>
-                                        </li>
-                                        <li class="gird__sidebar-list-item">
-                                            <label for="c3">
-                                                <input type="radio" name="c" id="c3" class="gird__sidebar-list-item-input">
+                                                <input type="radio" name="c" id="c1" value = 3 class="gird__sidebar-list-item-input productDetail ram">
                                                 <span class="gird__sidebar-list-item-text">3GB</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
-                                            <label for="c4">
-                                                <input type="radio" name="c" id="c4" class="gird__sidebar-list-item-input">
+                                            <label for="c2">
+                                                <input type="radio" name="c" id="c2" value = 4 class="gird__sidebar-list-item-input productDetail ram">
                                                 <span class="gird__sidebar-list-item-text">4GB</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
-                                            <label for="c5">
-                                                <input type="radio" name="c" id="c5" class="gird__sidebar-list-item-input">
-                                                <span class="gird__sidebar-list-item-text">5GB</span>
+                                            <label for="c4">
+                                                <input type="radio" name="c" id="c4" value = 6 class="gird__sidebar-list-item-input productDetail ram">
+                                                <span class="gird__sidebar-list-item-text">6GB</span>
                                             </label>
                                         </li>
                                         <li class="gird__sidebar-list-item">
                                             <label for="c6">
-                                                <input type="radio" name="c" id="c6" class="gird__sidebar-list-item-input">
-                                                <span class="gird__sidebar-list-item-text">6GB</span>
+                                                <input type="radio" name="c" id="c6" value = 8 class="gird__sidebar-list-item-input productDetail ram">
+                                                <span class="gird__sidebar-list-item-text">8GB</span>
+                                            </label>
+                                        </li>
+                                        <li class="gird__sidebar-list-item">
+                                            <label for="c10">
+                                                <input type="radio" name="c" id="c10" value = 12 class="gird__sidebar-list-item-input productDetail ram">
+                                                <span class="gird__sidebar-list-item-text">12GB</span>
                                             </label>
                                         </li>
                                     </ul>
@@ -238,14 +237,14 @@
                                 </div>
                                 <div class="body__top-sx">
                                     <label for="">Sắp xếp</label>
-                                    <select class="body__top-sx-select">
+                                    <select class="body__top-sx-select productDetail selector">
                                         <option value="">Tùy chọn</option>
-                                        <option value="">Từ cao đến thấp</option>
-                                        <option value="">Từ thấp đến cao</option>
+                                        <option value="DESC">Từ cao đến thấp</option>
+                                        <option value="ASC">Từ thấp đến cao</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row searchResult">
                                 
 
                                 <?php 

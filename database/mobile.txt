@@ -791,15 +791,15 @@ INSERT INTO `product_info` (`product_id`, `name`, `value`) VALUES
     (31, 'Dung lượng pin', '5.000mAh'),
     (31, 'Sạc nhanh', 'sạc nhanh 18W'),
 
-    (31, 'Độ phân giải màn hình', '6.5" FullHD+ 90Hz'),
-    (31, 'Camera chính', '50MP + 8MP + 2MP + 2MP'),
-    (31, 'Camera phụ', '8 MP'),
-    (31, 'CPU', 'Helio G88'),
-    (31, 'RAM', '4GB'),
-    (31, 'Bộ nhớ trong', '64GB'),
-    (31, 'Hệ điều hành', 'Android 11'),
-    (31, 'Dung lượng pin', '5.000mAh'),
-    (31, 'Sạc nhanh', 'sạc nhanh 18W');
+    (32, 'Độ phân giải màn hình', '6.5" FullHD+ 90Hz'),
+    (32, 'Camera chính', '50MP + 8MP + 2MP + 2MP'),
+    (32, 'Camera phụ', '8 MP'),
+    (32, 'CPU', 'Helio G88'),
+    (32, 'RAM', '4GB'),
+    (32, 'Bộ nhớ trong', '64GB'),
+    (32, 'Hệ điều hành', 'Android 11'),
+    (32, 'Dung lượng pin', '5.000mAh'),
+    (32, 'Sạc nhanh', 'sạc nhanh 18W');
 
 
 CREATE TABLE `orders` (
