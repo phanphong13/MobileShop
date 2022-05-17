@@ -17,51 +17,52 @@ CREATE TABLE `products` (
   `name` varchar(100) NOT NULL,
   `name_img` varchar(100) NOT NULL,
   `link_img` varchar(100) NOT NULL,
+  `ram-GB` int(11) NOT NULL,
   `price` int(20) NOT NULL,
   `sale_price` int(20) NOT NULL,
   PRIMARY KEY(id)
 );
 
 
-INSERT INTO `products` (`vendor`, `name`, `name_img`, `link_img`, `price`, `sale_price`) VALUES
+INSERT INTO `products` (`vendor`, `name`, `name_img`, `link_img`, `ram-GB`, `price`, `sale_price`) VALUES
 
-    ('Apple', 'Apple iPhone 13 Pro Max 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 34990000, 29150000),
-    ('Apple', 'Apple iPhone 13 128GB Chính hãng VN/A', 'ip-13', 'ip-13-Green.jpg', 24490000, 20790000),
-    ('Apple', 'Apple iPhone 13 Pro Max 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 36990000, 32190000),
-    ('Apple', 'Apple iPhone 13 Pro 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Blue.jpg', 30990000, 27190000),
-    ('Apple', 'Apple iPhone 13 Pro 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Silver.jpg', 34990000, 29690000),
-    ('Apple', 'Apple iPhone 13 256GB Chính hãng VN/A', 'ip-13', 'ip-13-Blue.jpg', 27990000, 23290000),
-    ('Apple', 'Apple iPhone 12 64GB Chính hãng VN/A', 'ip-12', 'ip-12-White.jpg', 24990000, 16490000),
-    ('Apple', 'Apple iPhone 13 Pro Max 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 43990000, 38890000),
-    ('Apple', 'Apple iPhone 12 128GB Chính hãng VN/A', 'ip-12', 'ip-12-Purple.jpg', 21600000, 18390000),
-    ('Apple', 'Apple iPhone 13 Pro Max 1TB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Green.jpg', 49990000, 43490000),
-    ('Apple', 'Apple iPhone 13 Pro 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 40990000, 33390000),
-    ('Apple', 'Apple iPhone 13 512GB Chính hãng VN/A', 'ip-13', 'ip-13-Black.jpg', 33990000, 24990000),
-
-
-    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|256GB)', 's22-ultra', 's22-ultra-Burgundy.jpg', 33990000, 26290000),
-    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|512GB)', 's22-ultra', 's22-ultra-Green.jpg', 36990000,29190000),
-    ('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|128GB)', 's22-plus', 's22-plus-Pink Gold.jpg', 25990000, 19190000),
-    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (8GB|128GB)', 's22-ultra', 's22-ultra-White.jpg', 30990000, 23490000),
-    ('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|256GB)', 's22-plus', 's22-plus-Green.jpg', 27490000, 20590000),
-    ('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 128GB', 's21-fe', 's21-fe-Green.jpg', 16990000, 12790000),
-    ('Samsung', 'Galaxy Z Fold3 5G 256GB', 'z-fold3', 'z-fold3-Black.jpg', 41990000, 32490000),
-    ('Samsung', 'Galaxy Z Flip3 5G 128GB', 'z-flip3', 'z-flip3-Cream.jpg', 24990000, 18490000),
-    ('Samsung', 'Galaxy Z Fold3 5G 512GB', 'z-fold3', 'z-fold3-Silver.jpg', 44990000, 35990000),
-    ('Samsung', 'Galaxy Z Flip3 5G 256GB', 'z-flip3', 'z-flip3-Lavender.jpg', 26990000, 20290000),
-    ('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 256GB', 's21-fe', 's21-fe-Violet.jpg', 18990000, 13990000),
+    ('Apple', 'Apple iPhone 13 Pro Max 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 6, 34990000, 29150000),
+    ('Apple', 'Apple iPhone 13 128GB Chính hãng VN/A', 'ip-13', 'ip-13-Green.jpg', 4, 24490000, 20790000),
+    ('Apple', 'Apple iPhone 13 Pro Max 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 6, 36990000, 32190000),
+    ('Apple', 'Apple iPhone 13 Pro 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Blue.jpg', 6, 30990000, 27190000),
+    ('Apple', 'Apple iPhone 13 Pro 256GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Silver.jpg', 6, 34990000, 29690000),
+    ('Apple', 'Apple iPhone 13 256GB Chính hãng VN/A', 'ip-13', 'ip-13-Blue.jpg', 4, 27990000, 23290000),
+    ('Apple', 'Apple iPhone 12 64GB Chính hãng VN/A', 'ip-12', 'ip-12-White.jpg', 4, 24990000, 16490000),
+    ('Apple', 'Apple iPhone 13 Pro Max 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Gold.jpg', 6, 43990000, 38890000),
+    ('Apple', 'Apple iPhone 12 128GB Chính hãng VN/A', 'ip-12', 'ip-12-Purple.jpg', 4, 21600000, 18390000),
+    ('Apple', 'Apple iPhone 13 Pro Max 1TB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Green.jpg', 6, 49990000, 43490000),
+    ('Apple', 'Apple iPhone 13 Pro 512GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 6, 40990000, 33390000),
+    ('Apple', 'Apple iPhone 13 512GB Chính hãng VN/A', 'ip-13', 'ip-13-Black.jpg', 4, 33990000, 24990000),
 
 
+    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|256GB)', 's22-ultra', 's22-ultra-Burgundy.jpg', 12, 33990000, 26290000),
+    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (12GB|512GB)', 's22-ultra', 's22-ultra-Green.jpg', 12, 36990000,29190000),
+    ('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|128GB)', 's22-plus', 's22-plus-Pink Gold.jpg', 8, 25990000, 19190000),
+    ('Samsung', 'Samsung Galaxy S22 Ultra 5G (8GB|128GB)', 's22-ultra', 's22-ultra-White.jpg', 8, 30990000, 23490000),
+    ('Samsung', 'Samsung Galaxy S22 Plus 5G (8GB|256GB)', 's22-plus', 's22-plus-Green.jpg', 8, 27490000, 20590000),
+    ('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 128GB', 's21-fe', 's21-fe-Green.jpg', 8, 16990000, 12790000),
+    ('Samsung', 'Galaxy Z Fold3 5G 256GB', 'z-fold3', 'z-fold3-Black.jpg', 12, 41990000, 32490000),
+    ('Samsung', 'Galaxy Z Flip3 5G 128GB', 'z-flip3', 'z-flip3-Cream.jpg', 8, 24990000, 18490000),
+    ('Samsung', 'Galaxy Z Fold3 5G 512GB', 'z-fold3', 'z-fold3-Silver.jpg', 12, 44990000, 35990000),
+    ('Samsung', 'Galaxy Z Flip3 5G 256GB', 'z-flip3', 'z-flip3-Lavender.jpg', 8, 26990000, 20290000),
+    ('Samsung', 'Samsung Galaxy S21 FE 5G 8GB 256GB', 's21-fe', 's21-fe-Violet.jpg', 8, 18990000, 13990000),
 
-    ('Xiaomi', 'Xiaomi Poco F3 8GB 256GB', 'xi-pocof3', 'xi-pocof3-Blue.jpg', 9990000, 8990000),
-    ('Xiaomi', 'Xiaomi Poco F3 6GB 128GB', 'xi-pocof3', 'xi-pocof3-White.jpg', 9090000, 8090000),
-    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Black.jpg', 4990000, 4050000),
-    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 64GB )', 'xi-redmi-note11', 'xi-redmi-note11-Blue.jpg', 4690000, 3690000),
-    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 6GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Green.jpg', 5190000, 5090000),
-    ('Xiaomi', 'Xiaomi Redmi 9C 4GB – 128GB', 'xi-redmi-9c', 'xi-redmi-9c-Blue.jpg', 3490000, 2990000),
-    ('Xiaomi', 'Xiaomi Redmi 9C 3GB – 64GB', 'xi-redmi-9c', 'xi-redmi-9c-Orange.jpg', 2990000, 2590000),
-    ('Xiaomi', 'Redmi 10 4GB 128GB', 'xi-redmi-10', 'xi-redmi-10-Blue.jpg', 4490000, 3850000),
-    ('Xiaomi', 'Redmi 10 4GB 64GB', 'xi-redmi-10', 'xi-redmi-10-Gray.jpg', 4390000, 3650000);
+
+
+    ('Xiaomi', 'Xiaomi Poco F3 8GB 256GB', 'xi-pocof3', 'xi-pocof3-Blue.jpg', 8, 9990000, 8990000),
+    ('Xiaomi', 'Xiaomi Poco F3 6GB 128GB', 'xi-pocof3', 'xi-pocof3-White.jpg', 6, 9090000, 8090000),
+    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Black.jpg', 4, 4990000, 4050000),
+    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 4GB – 64GB )', 'xi-redmi-note11', 'xi-redmi-note11-Blue.jpg', 4, 4690000, 3690000),
+    ('Xiaomi', 'Xiaomi Redmi Note 11 ( 6GB – 128GB )', 'xi-redmi-note11', 'xi-redmi-note11-Green.jpg', 6, 5190000, 5090000),
+    ('Xiaomi', 'Xiaomi Redmi 9C 4GB – 128GB', 'xi-redmi-9c', 'xi-redmi-9c-Blue.jpg', 4, 3490000, 2990000),
+    ('Xiaomi', 'Xiaomi Redmi 9C 3GB – 64GB', 'xi-redmi-9c', 'xi-redmi-9c-Orange.jpg', 3, 2990000, 2590000),
+    ('Xiaomi', 'Redmi 10 4GB 128GB', 'xi-redmi-10', 'xi-redmi-10-Blue.jpg', 4, 4490000, 3850000),
+    ('Xiaomi', 'Redmi 10 4GB 64GB', 'xi-redmi-10', 'xi-redmi-10-Gray.jpg', 4, 4390000, 3650000);
 
 
 CREATE TABLE `product_color` (
@@ -805,8 +806,12 @@ CREATE TABLE `orders` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `account_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
   `num` int(11) NOT NULL,
   `color` varchar(20) NOT NULL,
+  `link_img` varchar(100) NOT NULL,
+  `price_color` int(20) NOT NULL,
+  `price_total` int(20) NOT NULL,
   PRIMARY KEY(id),
   FOREIGN KEY (product_id) REFERENCES products(id),
   FOREIGN KEY (account_id) REFERENCES accounts(id)

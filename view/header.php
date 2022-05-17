@@ -96,6 +96,42 @@
                         <div class="header__cart-products">
                             <span class="header__cart-products-header">Sản phẩm của bạn</span>
                             <ul class="header__cart-products-list">
+                                <?php 
+                                    if (isset($product_orders)) {
+                                        // echo count($product_orders);
+                                        for ($i = 0; $i < count($product_orders); $i++) {
+                                ?>
+                                            <li class="header__cart-products-item">
+                                                <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Products/<?php echo $product_orders[$i]['link_img'] ?>" alt="">
+                                                </div>
+                                                <div class="header__cart-products-item-body">
+                                                    <div class="header__cart-products-item-body-top">
+                                                        <div class="header__cart-products-item-text"><?php echo $product_orders[$i]['name']. " - " . $product_orders[$i]['color']   ?></div>
+                                                    </div>
+                                                    <div class="header__cart-products-item-body-bottom">
+                                                        <div class="header__cart-products-item-price">
+                                                            <span class="header__cart-products-item-price-price">
+                                                                <?php echo number_format($product_orders[$i]['price_color'],0,'',',').'đ'; ?>
+                                                            </span>
+                                                            <span class="header__cart-products-item-price-mul">
+                                                                x
+                                                            </span><span class="header__cart-products-item-price-qnt">
+                                                                <?php echo $product_orders[$i]['num'] ?>
+                                                            </span>
+                                                        </div>
+                
+                                                        <div class="header__cart-products-item-delete">
+                                                            Xóa
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                <?php
+                                        }
+                                    }
+                                ?>
                                 
                                 <!-- <li class="header__cart-products-item">
                                     <div class="header__cart-products-item-img">
@@ -125,12 +161,12 @@
                                     </div>
                                 </li> -->
                                 
-                                <li class="header__cart-products-item">
+                                <!-- <li class="header__cart-products-item">
                                     <div class="header__cart-products-item-noProduct">
                                         <span>Giỏ hàng trống, vui lòng đặt hàng</span>
                                     </div>
                                     
-                                </li>
+                                </li> -->
     
                                 
                                 

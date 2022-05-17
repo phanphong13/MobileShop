@@ -23,6 +23,11 @@
 			$info = $this->model->query("select * from `product_info` where product_id = {$result[0]['id']};", true);
 			if ($info === false) die("Failed get version");
 
+			// get product in orders
+			$orderSql =  "SELECT * FROM `orders` WHERE account_id = {$_SESSION['id_account']}";
+			$product_orders = $this->model->query($orderSql,true);
+			if ($product_orders === false) die("Failed");
+
 						
             include "./view/product.php";
 		}
