@@ -162,9 +162,9 @@
                             <?php 
                                 if (isset($product_orders)) {
                                     ?>
-                                    <div class="header__cart-products-orderAll">
+                                    <a href="?controller=payment" class="header__cart-products-orderAll">
                                             Thanh toán
-                                    </div>
+                                    </a>
                                     <?php
                                 }
                             ?>

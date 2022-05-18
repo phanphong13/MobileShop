@@ -816,3 +816,15 @@ CREATE TABLE `orders` (
   FOREIGN KEY (product_id) REFERENCES products(id),
   FOREIGN KEY (account_id) REFERENCES accounts(id)
 );
+
+CREATE TABLE `payments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `account_id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `address` varchar(10) NOT NULL,
+  `phone_number` varchar(50) NOT NULL,
+  `total_amount` int(100) NOT NULL,
+  PRIMARY KEY(id),
+  FOREIGN KEY (account_id) REFERENCES accounts(id)
+);

@@ -49,18 +49,18 @@
             return false;
         }
     
-        // function update($table, $colum, $data, $id) {
-        //     $id = (int)$id;
-        //     if(!is_string($table) || !is_array($colum) || !is_array($data) || !is_integer($id))
-        //         return false;
-        //     $content = "";
-        //     foreach ($data as $key => $value) {
-        //         $content .= $key." = '".$this->conn->escape_string($value)."', ";
-        //     }
-        //     $content = trim($content, ', ');
-        //     $sql = "UPDATE `$table` SET $colum = $data WHERE id = $id;";
-        //     return $this->conn->query($sql);
-        // }
+        function update($table, $colum, $data, $id) {
+            $id = (int)$id;
+            if(!is_string($table) || !is_array($colum) || !is_array($data) || !is_integer($id))
+                return false;
+            $content = "";
+            foreach ($data as $key => $value) {
+                $content .= $key." = '".$this->conn->escape_string($value)."', ";
+            }
+            $content = trim($content, ', ');
+            $sql = "UPDATE `$table` SET $colum = $data WHERE id = $id;";
+            return $this->conn->query($sql);
+        }
     
         function delete($table, $id) {
             $id = (int)$id;

@@ -1067,3 +1067,130 @@ input[name = "r"] {
     text-decoration: none;
 }
 
+/* Payments */
+.payment__header {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.payment__header-icon {
+    text-align: center;
+}
+
+.payment__header-icon i {
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.payment__header-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.payment__header-notify {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #877979;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.payment__info-header {
+    color: var(--primary-color);
+
+    font-size: 2rem;
+}
+
+.payment__type {
+    margin: 20px 0;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.payment__btn {
+    width: 100%;
+    border: none;
+    padding: 10px 0 ;
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+
+.payment__btn:hover {
+    background-color: #074c29;
+}
+
+.payment__cart-header {
+    color: var(--primary-color);
+
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.payment__cart-number {
+    color: #877979;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.payment__cart-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.payment__back {
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #056cdb;
+
+}
+
+.payment__cart-sumPrice {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    margin-bottom: 38px;
+
+}
+
+.payment__cart-sumPrice span {
+    color: red;
+}
+
+/* payment success */
+.payment__success {
+    margin-top: 50px;
+    padding-top: 50px;
+    width: 100%;
+    background: url('/Assets/Img/Products/icon_hotproduct.png') top center / cover no-repeat;
+}
+
+.payment__success-icon {
+    text-align: center;
+    font-size: 6rem;
+    color: var(--primary-color);
+}   
+
+.payment__success-text {
+    margin: 30px 0;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.payment__success-back  {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 130px 0 170px 0;
+    color: var(--primary-color);
+}
