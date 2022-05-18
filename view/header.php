@@ -58,17 +58,17 @@
                                                 <div class="auth-form__form">
                                                     <div class="auth-form__group">
                                                         <label for="" class="auth-form__title">Nhập mật khẩu hiện tại</label>
-                                                        <input required type="password" name="password" class="auth-form__input" rules="required" required placeholder="Nhập mật khẩu hiện tại của bạn" autocomplete="on">
+                                                        <input required type="password" name="password__old" class="auth-form__input" rules="required" required placeholder="Nhập mật khẩu hiện tại của bạn" autocomplete="on">
                                                         <span class="auth-form__error"></span>
                                                     </div>
                                                     <div class="auth-form__group">
                                                         <label for="" class="auth-form__title">Nhập mật khẩu mới</label>
-                                                        <input required type="password" name="password-new" class="auth-form__input" rules="required|min:6" required placeholder="Nhập mật khẩu mới của bạn" autocomplete="on">
+                                                        <input required type="password" name="password" class="auth-form__input" rules="required|min:6" required placeholder="Nhập mật khẩu mới của bạn" autocomplete="on">
                                                         <span class="auth-form__error"></span>
                                                     </div>
                                                     <div class="auth-form__group">
                                                         <label for="" class="auth-form__title">Nhập lại mật khẩu</label>
-                                                        <input required type="password" name="password-newX2" class="auth-form__input" rules="required" required placeholder="Nhập lại mật khẩu của bạn" autocomplete="on">
+                                                        <input required type="password" name="passwordX2" class="auth-form__input" rules="required|isConfirm" required placeholder="Nhập lại mật khẩu của bạn" autocomplete="on">
                                                         <span class="auth-form__error"></span>
                                                     </div>
                                                 </div>
@@ -84,10 +84,10 @@
                                 </div>
                             </div> 
 
-                            <a href="?controller=start" class="header__user-info--logout">
+                            <div onclick="logout()" class="header__user-info--logout">
                                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                 Đăng xuất
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="header__cart">

@@ -15,3 +15,25 @@ function deleteOrder(id_order) {
         }
     })
 }
+
+// shake
+
+setInterval(function() {
+    btnCart.classList.add('shake');
+    setTimeout(function() {
+        btnCart.classList.remove('shake');
+    }, 500)
+}, 2000)
+
+
+// log out
+
+function logout() {
+	$.ajax({
+		url : 'ajax/logout.php',
+		type : 'post',
+		success : function (result) {
+			window.location = "index.php?controller=start";
+		}
+	})
+}

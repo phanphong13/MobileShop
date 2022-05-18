@@ -9,7 +9,7 @@
 	} else {
 		$controller = 'start';
 	}
-	if ($controller == 'start') unset($_SESSION['id_account']);
+	// if ($controller == 'start') unset($_SESSION['id_account']);
 	include "./controller/controller_$controller.php";
 
 ?>

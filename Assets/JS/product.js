@@ -62,6 +62,19 @@ if (modal__overlay__login) {
 
 }
 
+// mo resetPassword 
+
+if (navResetPassword) {
+    navResetPassword.addEventListener('click', function() {
+        modal__overlay__login.setAttribute("style", "display: block;");
+        modal__resetPassword.setAttribute("style", "display: block;");
+    });
+
+    navResetPassword.addEventListener('click', function(event) {
+        event.stopPropagation();
+    })
+}
+
 // show more
 
 let showMore = document.querySelector('.show-more')
@@ -128,10 +141,3 @@ function orders(id_product) {
         }
     })
 }
-
-setInterval(function() {
-    btnCart.classList.add('shake');
-    setTimeout(function() {
-        btnCart.classList.remove('shake');
-    }, 500)
-}, 2000)

@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="Assets/CSS/grid.css">
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/Fonts/fontawesome-free-6.1.1-web/css/all.css">
-    <script src="Assets/JS/search.js"></script>
 </head>
 <body>
     <div class="app">
@@ -296,6 +295,8 @@
 
     <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/delete.js"></script>
+    <script src="Assets/JS/search.js"></script>
+
     <script>
         validator('#resetPassword-form');
     </script>
