@@ -117,6 +117,6 @@
 				$html = "<h3>No Products Found</h3>";
 			}
 
-			echo $html;
+			die($html);
 	}
 ?>
