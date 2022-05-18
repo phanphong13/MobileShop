@@ -820,6 +820,7 @@ CREATE TABLE `orders` (
 CREATE TABLE `payments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `account_id` int(11) NOT NULL,
+  `time` datetime NOT NULL,
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `address` varchar(10) NOT NULL,

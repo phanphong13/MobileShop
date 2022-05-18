@@ -47,19 +47,23 @@
 						$password_new2 = $this->model->escape_string($_POST['passwordX2']);
 						if ($password === $password_new ) {
 							$alert = "Vui lòng nhập mật khẩu mới";
+							echo "<script type='text/javascript'>alert('$alert');
+							window.location.replace('index.php?controller=home');</script>";
 						} else if ($password_new === $password_new2) {
 							$sql = "UPDATE `accounts` SET password = '$password_new' WHERE id = {$id} ;";
 							$this->model->query($sql);
 							$alert = "Thay đổi mật khẩu thành công";
+							echo "<script type='text/javascript'>alert('$alert');
+							window.location.replace('index.php?controller=start');</script>";
 							// header("Location: index.php?controller=home");
 						}
 					} else {
-						$alert = "Mật khẩu không chính xác";	
+						$alert = "Mật khẩu không chính xác";
+						echo "<script type='text/javascript'>alert('$alert');
+							window.location.replace('index.php?controller=home');</script>";	
 					}
 					// $alert = "Đăng kí thành công";
 				} 
-				echo "<script type='text/javascript'>alert('$alert');
-				window.location.replace('index.php?controller=start');</script>";
 			}
 						
             include "./view/product.php";

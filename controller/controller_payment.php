@@ -21,6 +21,7 @@
 					
 					$data = array(
 						'account_id' => $_SESSION['id_account'],
+						'time' => date('Y-m-d H:i:s'),
 						'name' => $name,
 						'email' => $email,
 						'address' => $address,

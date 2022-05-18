@@ -176,6 +176,7 @@
     ?>
 
     <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/validate.js"></script>
     <script>
         validator('#payment');
     </script>
