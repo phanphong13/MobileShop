@@ -103,11 +103,6 @@ for (let i = 0; i < productColors.length; i++) (function(i){
 })(i);
 
 
-function removeBlurBackground(pColor) {
-    pColor.classList.add('purchase-item--clicked')
-}
-
-
 function orders(id_product) {
     var productColorSelect = document.querySelector('.product__purchase-option-item').getAttribute('color');
     // console.log(productColorSelect)
@@ -128,3 +123,8 @@ function orders(id_product) {
         }
     })
 }
+
+// comment fb
+let commentFb = document.querySelector(".fb-comments");
+
+commentFb.setAttribute('data-href', `http://127.0.0.1:5500/MobileShop/product/${productImg}`)

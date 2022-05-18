@@ -648,7 +648,7 @@
 
           <!-- ratings -->
           <div id="product__ratings" class="product__ratings">
-              <div class="fb-comments" data-href="http://127.0.0.1:5500/MobileShop/product.html" data-width="80%" data-numposts="5" data-mobile="true"></div>
+              <div class="fb-comments" data-href="" data-width="80%" data-numposts="5" data-mobile="true"></div>
           </div>
         </div>
       </div>
