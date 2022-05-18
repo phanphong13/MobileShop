@@ -1,8 +1,14 @@
 <?php
 	include '../app/model.php';
 	$conn = new Database("mobile");
+	// $searchData = $_REQUEST['prodName'];
 	if(isset($_POST['action'])){
 		$sqlQuery = "SELECT * FROM products WHERE id != 0 ";
+			if(isset($_POST["searchProduct"])) {
+				$searchData = $conn->escape_string($_POST["searchProduct"]);
+				$sqlQuery .= "
+					AND name LIKE '%{$searchData}%'";
+			}
 			if(isset($_POST["price"])){
 				$checkValue = implode("','", $_POST["price"]);
 				if($checkValue == 0) {

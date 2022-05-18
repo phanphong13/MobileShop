@@ -4,20 +4,26 @@ $(document).ready(function(){
         filterSearch();
     });
 });
-
+let searchValue ='';
+$(document).ready(function() {
+		$("#SearchBar").keyup(function(){
+			 searchValue = $(this).val();
+		});
+	});
 function filterSearch() {
 	var price = getFilterData('price')
 	var brand = getFilterData('brand');
 	var ram = getFilterData('ram');
+	var searchProduct =  searchValue;
 	var selector = $('.selector option:selected').val();
-	 var action = 'fetch_data';
+	var action = 'fetch_data';
 
-	console.log(price, brand, ram,action,selector)
+	console.log(price, brand, ram,action,selector,searchProduct)
 
 	$.ajax({
 		url:"ajax/ProductSearch.php",
 		method:"POST",	
-		data:{action : action,price: price, brand:brand, ram:ram, selector:selector},
+		data:{action : action,price: price, brand:brand, ram:ram, selector:selector,searchProduct:searchProduct},
 		success:function(response){
 			 $(".searchResult").html(response);
 		}

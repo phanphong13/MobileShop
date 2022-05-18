@@ -30,12 +30,12 @@
 
                <div class="header__search">
                    <div class="header__search-wrapper">
-                       <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm...">
+                       <input type="text" name="SearchBar" id = "SearchBar" class="header__search-input" placeholder="Tìm kiếm sản phẩm...">
                        <div class="header__search-icon">
-                           <i class="fa-solid fa-magnifying-glass"></i>
+                           <i type = "submit" id="getValBtnID" class="fa-solid fa-magnifying-glass productDetail searchProduct"></i>
                        </div>
                    </div>
-               </div>
+                </div>
 
                <div class="header__right">
                     <!-- <div class="header__user">
