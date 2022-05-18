@@ -267,9 +267,9 @@
                                                         <div>
                                                             <?php echo number_format($products[$i]['sale_price'],0,'',',').'đ'; ?>
                                                         </div>
-                                                        <div class="product__price-sale-icon"> 
+                                                        <a href="?controller=product&id_product=<?php echo $products[$i]['id'] ?>" class="product__price-sale-icon"> 
                                                             <i class="fa-solid fa-cart-shopping"></i>
-                                                        </div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
