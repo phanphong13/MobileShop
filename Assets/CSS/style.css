@@ -1095,7 +1095,7 @@ input[name = "r"] {
 
 .payment__header-icon i {
     font-size: 5rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .payment__header-heading {
@@ -1103,7 +1103,7 @@ input[name = "r"] {
     font-size: 3rem;
     font-weight: 500;
     line-height: 40px;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin: 10px 0;
 }
 
@@ -1116,8 +1116,7 @@ input[name = "r"] {
 }
 
 .payment__info-header {
-    color: var(--primary-color);
-
+    color: var(--text-color);
     font-size: 2rem;
 }
 
@@ -1142,8 +1141,7 @@ input[name = "r"] {
 }
 
 .payment__cart-header {
-    color: var(--primary-color);
-
+    color: var(--text-color);
     font-size: 2rem;
     margin-bottom: 16px;
 }
