@@ -64,6 +64,198 @@
                                 <i class="fa-solid fa-clock-rotate-left"></i>
                                 Lịch sử mua hàng
                             </span>
+                            <!-- Transaction History -->
+                            <div class="modal__transactionHistory">
+                                <div class="modal__body">
+                                    <div class="auth-form" style="min-height: calc(50vh + 47px); overflow: hidden;">
+                                            <span class="header__cart-products-header">Sản phẩm bạn đã mua</span>
+                                            <ul class="header__cart-products-list">
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="header__cart-products-item">
+                                                    <div class="header__cart-products-item-img">
+                                                    <img src="Assets/Img/Header/Logo/logo.png" alt="">
+
+                                                        
+                                                    </div>
+                                                    <div class="header__cart-products-item-body">
+                                                        <div class="header__cart-products-item-body-top">
+                                                            <div class="header__cart-products-item-text">Ai Phôn Mười Ba Pờ Rồ Mặc</div>
+                                                        </div>
+                                                        <div class="header__cart-products-item-body-bottom">
+                                                            <div class="header__cart-products-item-price">
+                                                                <span class="header__cart-products-item-price-price">
+                                                                    20 Củ
+                                                                </span>
+                                                                <span class="header__cart-products-item-price-mul">
+                                                                    x
+                                                                </span><span class="header__cart-products-item-price-qnt">
+                                                                    1
+                                                                </span>
+                                                            </div>
+                    
+                                                            <div class="header__cart-products-item-delete">
+                                                                Đã mua
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                
+                                                <!-- <li class="header__cart-products-item" style="min-height: calc(50vh); border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+                                                    <div class="header__cart-products-item-noProduct">
+                                                        <span>Bạn chưa mua hàng, vui lòng đặt hàng</span>
+                                                    </div>
+                                                    
+                                                </li> -->
+                                                
+                                            </ul>
+                                    </div>
+                                </div>
+                            </div> 
 
                             <span class="header__user-info--resetPassword">
                                 <i class="fa-solid fa-key"></i>
@@ -183,8 +375,8 @@
                                         }
                                     } else {
                                 ?>
-                                        <li class="header__cart-products-item">
-                                            <div class="header__cart-products-item-noProduct">
+                                        <li class="header__cart-products-item" style="border-bottom-left-radius: 4px; border-bottom-right-radius: 4px;">
+                                            <div class="header__cart-products-item-noProduct" >
                                                 <span>Giỏ hàng trống, vui lòng đặt hàng</span>
                                             </div>
                                             

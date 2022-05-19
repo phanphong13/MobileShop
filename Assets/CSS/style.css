@@ -129,6 +129,18 @@
     display: none;
 }
 
+.modal__transactionHistory {
+    position: fixed;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 4px;
+    display: none;
+
+}
+
 .modal__resetPassword {
     position: fixed;
     width: 500px;
