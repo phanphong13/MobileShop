@@ -33,10 +33,10 @@
                             ?>
                             </span>
 
-                            <span class="header__user-info--setting">
+                            <a href="?controller=user" class="header__user-info--setting">
                                 <i class="fa-solid fa-gear"></i>
                                 Quản lý cửa hàng
-                            </span>
+                            </a>
 
                             <span class="header__user-info--history">
                                 <i class="fa-solid fa-clock-rotate-left"></i>

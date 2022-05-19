@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -21,16 +21,16 @@
      referrerpolicy="no-referrer"
     /> 
     <!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="../assets/css/demo.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style-self.css" />
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-self.css" />
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-image="../assets/img/sidebar/sidebar-5.jpg">
+        <div class="sidebar" data-image="assets/img/sidebar/sidebar-5.jpg">
             <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -44,19 +44,19 @@
                 </div>
                 <ul class="nav">
                     <li>
-                        <a class="nav-link" href="./user.html">
+                        <a class="nav-link" href="?controller=user">
                             <i class="nc-icon nc-circle-09"></i>
                             <p>User</p>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./order.html">
+                        <a class="nav-link" href="?controller=payment_admin">
                             <i class="nc-icon nc-circle-09"></i>
-                            <p>Order</p>
+                            <p>Payment</p>
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="product.html">
+                        <a class="nav-link" href="?controller=product_admin">
                             <i class="nc-icon nc-notes"></i>
                             <p>Product List</p>
                         </a>
@@ -68,7 +68,7 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg " color-on-scroll="500">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#p"> Product List </a>
+                    <a class="navbar-brand" href="?controller=product_admin"> Product List </a>
                 </div>
             </nav>
             <!-- End Navbar -->
@@ -87,90 +87,47 @@
                                             <th>ID</th>
                                             <th>Tên Sản Phẩm</th>
                                             <th>Hãng Sản Xuất</th>
-                                            <th>Số Lượng</th>
-                                            <th>Màu Sắc</th>
-                                            <th class="option-heading">Tùy Chọn</th>
+                                            <th>Số Lượng RAM</th>
+                                            <th>Name IMG</th>
+                                            <th>Link IMG</th>
+                                            <th>Giá Gốc</th>
+                                            <th>Giá hiện tại</th>
+
+                                            <!-- <th class="option-heading">Tùy Chọn</th>
                                             <th class="add-row-table">
                                                 Thêm
                                                 <i class="table-icon-add fa-solid fa-plus"></i>
-                                           </th>
+                                           </th> -->
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td class="has-edit">123</td>
-                                                <td class="has-edit">Iphone 13 pro mặc</td>
-                                                <td class="has-edit">Apple</td>
-                                                <td class="has-edit">99</td>
-                                                <td class="has-edit">Blue</td>
-                                                <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
-                                                <td class="delete-product">
-                                                    <a href="#" class="delete-product__link">Xóa</a>
-                                                </td>
-                                                <td class="product-edit-detail">
-                                                    <a href="./product_detail.html" class="product-edit-detail__link">Chi tiết</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="has-edit">123</td>
-                                                <td class="has-edit">Iphone 13 pro mặc</td>
-                                                <td class="has-edit">Apple</td>
-                                                <td class="has-edit">99</td>
-                                                <td class="has-edit">Blue</td>
-                                                <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
-                                                <td class="delete-product">
-                                                    <a href="#" class="delete-product__link">Xóa</a>
-                                                </td>
-                                                <td class="product-edit-detail">
-                                                    <a href="./product_detail.html" class="product-edit-detail__link">Chi tiết</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="has-edit">123</td>
-                                                <td class="has-edit">Iphone 13 pro mặc</td>
-                                                <td class="has-edit">Apple</td>
-                                                <td class="has-edit">99</td>
-                                                <td class="has-edit">Blue</td>
-                                                <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
-                                                <td class="delete-product">
-                                                    <a href="#" class="delete-product__link">Xóa</a>
-                                                </td>
-                                                <td class="product-edit-detail">
-                                                    <a href="./product_detail.html" class="product-edit-detail__link">Chi tiết</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="has-edit">123</td>
-                                                <td class="has-edit">Iphone 13 pro mặc</td>
-                                                <td class="has-edit">Apple</td>
-                                                <td class="has-edit">99</td>
-                                                <td class="has-edit">Blue</td>
-                                                <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
-                                                <td class="delete-product">
-                                                    <a href="#" class="delete-product__link">Xóa</a>
-                                                </td>
-                                                <td class="product-edit-detail">
-                                                    <a href="./product_detail.html" class="product-edit-detail__link">Chi tiết</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="has-edit">123</td>
-                                                <td class="has-edit">Iphone 13 pro mặc</td>
-                                                <td class="has-edit">Apple</td>
-                                                <td class="has-edit">99</td>
-                                                <td class="has-edit">Blue</td>
-                                                <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
-                                                <td class="delete-product">
-                                                    <a href="#" class="delete-product__link">Xóa</a>
-                                                </td>
-                                                <td class="product-edit-detail">
-                                                    <a href="./product_detail.html" class="product-edit-detail__link">Chi tiết</a>
-                                                </td>
-                                            </tr>
+                                            <?php 
+                                                if (isset($result)) {
+                                                    for ($i = 0; $i < count($result); $i++) {
+                                                        ?>
+
+                                                            <tr>
+                                                                <td class="has-edit"><?php echo $result[$i]['id']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['name']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['vendor']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['ram-GB']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['name_img']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['link_img']?></td>
+                                                                <td class="has-edit"><?php echo number_format($result[$i]['price'],0,'',',').' đ'?></td>
+                                                                <td class="has-edit"><?php echo number_format($result[$i]['sale_price'],0,'',',').' đ'?></td>
+                                                                <!-- <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td> -->
+                                                                <!-- <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
+                                                                <td class="delete-product">
+                                                                    <a href="#" class="delete-product__link">Xóa</a>
+                                                                </td> -->
+                                                                <td class="product-edit-detail">
+                                                                    <a href="?controller=product_detail&id_product=<?php echo $result[$i]['id']?>" class="product-edit-detail__link">Chi tiết</a>
+                                                                </td>
+                                                            </tr>
+                                                        <?php
+                                                    }
+                                                }
+                                            ?>
+                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -252,12 +209,12 @@
 
             <li class="active">
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-1.jpg" alt="" />
+                    <img src="assets/img/sidebar-1.jpg" alt="" />
                 </a>
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-3.jpg" alt="" />
+                    <img src="assets/img/sidebar-3.jpg" alt="" />
                 </a>
             </li>
             <li>
@@ -267,7 +224,7 @@
             </li>
             <li>
                 <a class="img-holder switch-trigger" href="javascript:void(0)">
-                    <img src="../assets/img/sidebar-5.jpg" alt="" />
+                    <img src="assets/img/sidebar-5.jpg" alt="" />
                 </a>
             </li>
 
@@ -297,22 +254,22 @@
  -->
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<script src="assets/js/plugins/bootstrap-switch.js"></script>
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script>
+<script src="assets/js/plugins/chartist.min.js"></script>
 <!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<script src="assets/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
-<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<script src="assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-<script src="../assets/js/demo.js"></script>
+<script src="assets/js/demo.js"></script>
 
-<script src="../assets/js/admin.js"></script>
+<script src="assets/js/admin.js"></script>
 
 </html>
