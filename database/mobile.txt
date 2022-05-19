@@ -5,11 +5,15 @@ USE mobile;
 
 CREATE TABLE `accounts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(10) NOT NULL,
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY(id)
 );
+
+INSERT INTO `accounts` (`type`, `name`, `email`, `password`) VALUES
+('Admin', 'Admin', 'admin@gmail.com', '123456');
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

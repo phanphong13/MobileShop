@@ -15,6 +15,7 @@
 				if($result === false) die("Failed in signup");
 				if($result === NULL) {
 					$data = array(
+						'type' => 'User',
 						'name' => $name,
 						'email' => $email,
 						'password' => $password,
@@ -41,6 +42,7 @@
 					$alert = "Email sai";
 				} else {
 					if($result[0]['password'] == $password) {
+							$_SESSION['type'] = $result[0]['type'];
 						 	$_SESSION['name'] = $result[0]['name'];
 							$_SESSION['email'] = $email;
 							$_SESSION['id_account'] = $result[0]['id'];

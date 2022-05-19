@@ -20,9 +20,24 @@
                         <div class="header__right-icon">
                             <i class="fa-solid fa-user"></i>
                         </div>
-                        <span class="header__right-text">
-                            Tài Khoản
-                        </span>
+
+                        <?php 
+                            if (isset($_SESSION['type']) && $_SESSION['type'] === 'Admin') {
+                        ?>
+                                <span class="header__right-text">
+                                    Admin
+                                </span>
+                        <?php
+                            } else {
+                        ?>
+                                <span class="header__right-text">
+                                    User
+                                </span>
+                        <?php
+                            }
+                        ?>
+
+                        
                         
                         <div class="header__user-info">
                             <span class="header__user-info--email">
@@ -32,11 +47,18 @@
                                 }
                             ?>
                             </span>
-
+                            
+                            <?php 
+                                if (isset($_SESSION['type']) && $_SESSION['type'] === 'Admin') {
+                                    ?>
                             <a href="?controller=user" class="header__user-info--setting">
                                 <i class="fa-solid fa-gear"></i>
                                 Quản lý cửa hàng
                             </a>
+                                    <?php
+                                }
+                            ?>
+                            
 
                             <span class="header__user-info--history">
                                 <i class="fa-solid fa-clock-rotate-left"></i>
