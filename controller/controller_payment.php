@@ -9,7 +9,8 @@
 			if ($product_orders) {
 				for ($i = 0; $i < count($product_orders); $i++) {
 					$sum += $product_orders[$i]['price_total'];
-			}}
+				}
+			}
 			if ($product_orders) {
 				if(isset($_POST['order']) && isset($_POST['name'])) { 
 					$name = $this->model->escape_string($_POST['name']);
@@ -28,8 +29,26 @@
 						'phone_number' => $phoneNumber,
 						'total_amount' => $sum,
 					);
-					if(!$this->model->insert('payments', $data))
+					$re = $this->model->insert('payments', $data);
+					if(!$re) {
 						die('Booking: Failed!');
+					} else {
+						for ($i = 0; $i < count($product_orders); $i++) {
+							$data = array(
+								'payment_id' => $re,
+								'name' => $product_orders[$i]['name'],
+								'num' => $product_orders[$i]['num'],
+								'color' => $product_orders[$i]['color'],
+								'link_img' => $product_orders[$i]['link_img'],
+								'price_color' => $product_orders[$i]['price_color'],
+								'price_total' => $product_orders[$i]['price_total'],
+							);
+							if (!$this->model->insert('payment_detail', $data)) 
+								die("Failed");
+						}
+					}
+						
+					
 					header('Location: ?controller=success');
 					$order = $this->model->deleteOrder('orders', $_SESSION['id_account']);
 				}
