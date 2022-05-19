@@ -2,7 +2,7 @@
            <div class="header-wrapper">
                <div class="header__logo">
                    <a href="?controller=home"class="header__logo-img">
-                        <img src="Assets/Img/Header/Logo/clickbuy.png" alt="">
+                        <img src="Assets/Img/Header/Logo/logo.png" alt="">
                    </a>
                </div>
 
