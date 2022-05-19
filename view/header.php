@@ -33,6 +33,16 @@
                             ?>
                             </span>
 
+                            <span class="header__user-info--setting">
+                                <i class="fa-solid fa-gear"></i>
+                                Quản lý cửa hàng
+                            </span>
+
+                            <span class="header__user-info--history">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                Lịch sử mua hàng
+                            </span>
+
                             <span class="header__user-info--resetPassword">
                                 <i class="fa-solid fa-key"></i>
                                 Đổi mật khẩu
