@@ -87,7 +87,7 @@
                                              <th>Account ID</th>
                                              <th>Tên Khách Hàng</th>
                                              <th>Email</th>
-                                             <th>Đại Chỉ</th>
+                                             <th>Địa Chỉ</th>
                                              <th>Số Điện Thoại</th>
                                              <th>Thời Gian Giao Dịch</th>
                                              <th>Tổng tiền</th>

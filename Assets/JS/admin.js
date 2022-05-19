@@ -54,7 +54,7 @@ function editRow() {
             var input = document.createElement('input');
             input.setAttribute('type', 'text');
             input.value = this.innerHTML;
-            input.style.maxWidth = (this.offsetWidth * 0.6) + 'px';
+            input.style.maxWidth = (this.offsetWidth) + 'px';
             input.style.height = (this.offsetHeight - 2 * this.clientTop) + 'px';
             input.style.fontFamily = 'inherit';
             input.style.fontSize = 'inherit';

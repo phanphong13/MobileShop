@@ -87,7 +87,7 @@
                                             <th>ID</th>
                                             <th>Tên Sản Phẩm</th>
                                             <th>Hãng Sản Xuất</th>
-                                            <th>Số Lượng RAM</th>
+                                            <th>RAM</th>
                                             <th>Name IMG</th>
                                             <th>Link IMG</th>
                                             <th>Giá Gốc</th>
@@ -109,13 +109,13 @@
                                                                 <td class="has-edit"><?php echo $result[$i]['id']?></td>
                                                                 <td class="has-edit"><?php echo $result[$i]['name']?></td>
                                                                 <td class="has-edit"><?php echo $result[$i]['vendor']?></td>
-                                                                <td class="has-edit"><?php echo $result[$i]['ram-GB']?></td>
+                                                                <td class="has-edit"><?php echo $result[$i]['ram-GB'].'GB'?></td>
                                                                 <td class="has-edit"><?php echo $result[$i]['name_img']?></td>
                                                                 <td class="has-edit"><?php echo $result[$i]['link_img']?></td>
                                                                 <td class="has-edit"><?php echo number_format($result[$i]['price'],0,'',',').' đ'?></td>
                                                                 <td class="has-edit"><?php echo number_format($result[$i]['sale_price'],0,'',',').' đ'?></td>
-                                                                <!-- <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td> -->
-                                                                <!-- <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
+                                                                <!-- <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
+                                                                <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
                                                                 <td class="delete-product">
                                                                     <a href="#" class="delete-product__link">Xóa</a>
                                                                 </td> -->
