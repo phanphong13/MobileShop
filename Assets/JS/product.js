@@ -28,8 +28,6 @@ if (btnCart) {
 }
 
 // 
-var navTransactionHistory = document.querySelector('.header__user-info--history');
-var modal__transactionHistory = document.querySelector('.modal__transactionHistory');
 var navResetPassword = document.querySelector('.header__user-info--resetPassword');
 var modal__resetPassword = document.querySelector('.modal__resetPassword');
 var modal__overlay__login = document.querySelector('.modal__overlay-login');
@@ -47,17 +45,6 @@ if (navResetPassword) {
     })
 }
 
-// mo transactionHistory
-if (navTransactionHistory) {
-    navTransactionHistory.addEventListener('click', function() {
-        modal__overlay__login.setAttribute("style", "display: block;");
-        modal__transactionHistory.setAttribute("style", "display: block;");
-    });
-
-    navTransactionHistory.addEventListener('click', function(event) {
-        event.stopPropagation();
-    })
-}
 
 // click overlay => out
 if (modal__overlay__login) {
@@ -67,9 +54,6 @@ if (modal__overlay__login) {
         }
         if (modal__resetPassword) {
             modal__resetPassword.setAttribute("style", "display: none;");
-        }
-        if (modal__transactionHistory) {
-            modal__transactionHistory.setAttribute("style", "display: none;");
         }
         if (userInfo) {
             userInfo.classList.remove("display");
