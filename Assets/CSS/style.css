@@ -395,7 +395,8 @@ input[name = "show-modal-register"] {
     background-color: #fff;
     box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
     border-radius: 4px;
-    animation: fadeIn ease 0.2s;
+    transform-origin: top right;
+    animation: ShowTopRight ease 0.3s;
     display: none;
 }
 
@@ -520,7 +521,8 @@ input[name = "show-modal-register"] {
     background-color: #fff;
     box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
     border-radius: 4px;
-    animation: fadeIn ease 0.2s;
+    transform-origin: top right;
+    animation: ShowTopRight ease 0.3s;
     display: none;   
 }
 
