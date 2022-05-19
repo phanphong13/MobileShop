@@ -296,6 +296,7 @@
     <script src="Assets/JS/main.js"></script>
     <script src="Assets/JS/delete.js"></script>
     <script src="Assets/JS/search.js"></script>
+    <script src="Assets/JS/validate.js"></script>
 
     <script>
         validator('#resetPassword-form');

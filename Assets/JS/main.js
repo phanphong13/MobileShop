@@ -186,3 +186,16 @@ for(var i = 0; i<btnBack.length; i++) {
         modal__register.setAttribute("style", "display: none;");
     }
 }
+
+var container = document.getElementById("container");
+if (container) {
+    container.addEventListener('click', function() {
+        if (userInfo) {
+            userInfo.classList.remove("display");
+        }
+
+        if (cartList) {
+            cartList.classList.remove("display");
+        }
+    })
+}
