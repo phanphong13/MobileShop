@@ -18,10 +18,12 @@ function deleteOrder(id_order) {
 
 // shake
 
+btnCart__animation = document.querySelector('.header__cart--animation');
+
 setInterval(function() {
-    btnCart.classList.add('shake');
+    btnCart__animation.classList.add('shake');
     setTimeout(function() {
-        btnCart.classList.remove('shake');
+        btnCart__animation.classList.remove('shake');
     }, 500)
 }, 2000)
 

@@ -142,7 +142,7 @@ let commentFb = document.querySelector(".fb-comments");
 
 commentFb.setAttribute('data-href', `http://127.0.0.1:5500/MobileShop/product/${productImg}`)
 
-
+// 
 var product__content = document.getElementById("product-content");
 if (product__content) {
     product__content.addEventListener('click', function() {

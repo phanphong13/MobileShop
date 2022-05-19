@@ -104,6 +104,7 @@ if (btnCart) {
     })
 }
 
+
 // 
 
 var navResetPassword = document.querySelector('.header__user-info--resetPassword');

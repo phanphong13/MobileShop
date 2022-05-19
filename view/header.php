@@ -123,24 +123,26 @@
                         </div>
                     </div>
                     <div class="header__cart">
-                        <div class="header__right-icon">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </div>
-                        <span class="header__right-text">
-                            Giỏ hàng
-                        </span>
-                        <div class="header__cart-number">
-                             <?php
-                                    if ($product_orders) {
-                                        $num_product = 0;
-                                        for ($i = 0; $i < count($product_orders); $i++) {
-                                            $num_product += $product_orders[$i]['num'];
+                        <div class="header__cart--animation">
+                            <div class="header__right-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <span class="header__right-text">
+                                Cart
+                            </span>
+                            <div class="header__cart-number">
+                                 <?php
+                                        if ($product_orders) {
+                                            $num_product = 0;
+                                            for ($i = 0; $i < count($product_orders); $i++) {
+                                                $num_product += $product_orders[$i]['num'];
+                                            }
+                                            echo $num_product;
+                                        } else {
+                                            echo 0;
                                         }
-                                        echo $num_product;
-                                    } else {
-                                        echo 0;
-                                    }
-                            ?>
+                                ?>
+                            </div>
                         </div>
                         <div class="header__cart-products">
                             <span class="header__cart-products-header">Sản phẩm của bạn</span>
