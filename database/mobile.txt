@@ -21,14 +21,14 @@ CREATE TABLE `products` (
   `name` varchar(100) NOT NULL,
   `name_img` varchar(100) NOT NULL,
   `link_img` varchar(100) NOT NULL,
-  `ram-GB` int(11) NOT NULL,
+  `ram_GB` int(11) NOT NULL,
   `price` int(20) NOT NULL,
   `sale_price` int(20) NOT NULL,
   PRIMARY KEY(id)
 );
 
 
-INSERT INTO `products` (`vendor`, `name`, `name_img`, `link_img`, `ram-GB`, `price`, `sale_price`) VALUES
+INSERT INTO `products` (`vendor`, `name`, `name_img`, `link_img`, `ram_GB`, `price`, `sale_price`) VALUES
 
     ('Apple', 'Apple iPhone 13 Pro Max 128GB Chính hãng VN/A', 'ip-13-promax', 'ip-13-promax-Black.jpg', 6, 34990000, 29150000),
     ('Apple', 'Apple iPhone 13 128GB Chính hãng VN/A', 'ip-13', 'ip-13-Green.jpg', 4, 24490000, 20790000),

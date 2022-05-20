@@ -27,7 +27,69 @@ function saveRow() {
     let rowTable = this.parentElement.parentElement;
     rowTable.querySelector('.edit-btn').classList.remove('hidden');
     rowTable.setAttribute('hasedit', 'no');
+    let e1 = rowTable.querySelectorAll('.text');
+    let e2 = rowTable.querySelectorAll('.const');
+    texts = new Array();
+    numbers = new Array();
+    for (var i = 0; i < e1.length; i++) {
+        texts[i] = e1[i].innerText;
+    }
+    for (var i = 0; i < e2.length; i++) {
+        numbers[i] = parseInt(e2[i].innerText);
+    }
 
+    console.log(texts.length , numbers.length);
+    // account
+    if (texts.length === 4 && numbers.length === 1) {
+        $.ajax({
+            url : "ajax/account.php",
+            type : "post",  
+            data : {
+                'id' : numbers[0],
+                'type' : texts[0],
+                'name' : texts[1],
+                'email' : texts[2],
+                'password' : texts[3],
+            },
+            dataType : 'text',
+            success: function(result){
+                alert(result);
+                // console.log('success');
+            },
+            error : function(result) {
+                alert("Không thể gửi dữ liệu");      
+            }
+        })
+    }
+
+    // product
+    if (texts.length === 4 && numbers.length === 4) {
+        $.ajax({
+            url : "ajax/product.php",
+            type : "post",
+            data : {
+                'id' : numbers[0],
+                'name' : texts[0],
+                'vendor' : texts[1],
+                'ram' : numbers[1],
+                'name_img' : texts[2],
+                'link_img' : texts[3],
+                'price' : numbers[2],
+                'sale_price' : numbers[3],
+            },
+            dataType : 'text',
+            success: function(result){
+                alert(result);
+            },
+            error : function(result) {
+                alert("Không thể gửi dữ liệu");      
+            }
+        })
+    }
+
+    if (texts.length === 2 && numbers.length === 3) {
+
+    }
     // thêm code gửi data về sql ở đây
 }
 
@@ -112,6 +174,10 @@ function addRow() {
         cell.innerHTML = '';
     }
 
+    let id = rowsTable[rowsTable.length - 1].querySelectorAll('.const')
+    
+    let e = newRow.querySelectorAll('.const')
+    e[0].innerText = parseInt(id[0].innerText) + 1;
     // add listen onclick for new row
     newRow.querySelector('.edit-btn .table-icon').onclick = editRow;
     newRow.querySelector('.save-btn .table-icon').onclick = saveRow;

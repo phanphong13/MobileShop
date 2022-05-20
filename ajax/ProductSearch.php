@@ -45,7 +45,7 @@
 			if(isset($_POST["ram"])) {
 				$ramFilterData = implode("','", $_POST["ram"]);
 				$sqlQuery .= "
-				AND `ram-GB` IN('".$ramFilterData."')";
+				AND `ram_GB` IN('".$ramFilterData."')";
 			}
 			if(isset($_POST["selector"])){
 				$selectorFilter = $conn->escape_string($_POST["selector"]);
