@@ -190,9 +190,9 @@
                         <div class="product-price-origin"><?php if (isset($result) && $result !== NULL) echo number_format($result[0]['price'],0,'',',').'đ' ?></div>
                         <div class="product-price-current"></div>
                       </div>
-                      <!-- <div class="product-installment">
-                        Trả góp từ 5.098.000₫ / 1 tháng
-                      </div> -->
+                      <div class="product-installment">
+                        Trả góp từ <span><?php if (isset($result) && $result !== NULL) echo number_format($result[0]['price'] / 6,0,'',',').'đ' ?></span> / 1 tháng
+                      </div>
                     </div>
 
                     <!-- option -->

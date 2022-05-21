@@ -397,6 +397,7 @@ input[name = "show-modal-register"] {
 
 .header__user {
     position: relative;
+    cursor: pointer;
 }
 
 .header__user-info {
@@ -456,28 +457,25 @@ input[name = "show-modal-register"] {
     color: var(--primary-color);
     font-size: 1.4rem;
     padding: 15px 10px;
+
 }
 
+.header__user-info--logout:hover,
+.header__user-info--setting:hover,
+.header__user-info--history:hover,
 .header__user-info--resetPassword:hover {
-    background-color: #e3e3e3
-}
-
-.header__user-info--history:hover {
-    background-color: #e3e3e3
-}
-
-.header__user-info--setting:hover {
-    background-color: #e3e3e3
-}
-
-.header__user-info--logout:hover {
-    background-color: #e3e3e3
+    background-color: #e3e3e3;
+    cursor: pointer;
 }
 
 
 .header__cart {
     margin-left: 30px;
     position: relative;
+}
+
+.header__cart--animation {
+    cursor: pointer;
 }
 
 .shake {
