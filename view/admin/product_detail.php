@@ -86,7 +86,7 @@
                                  <!-- COLOR -->
                                 <div class="card-body table-full-width table-responsive">
                                      <div><h5>Color</h5></h5></div>
-                                     <table class="table table-hover table-manage">
+                                     <table class="table table-hover table-manage table1">
                                          <thead>
                                              <th>ID</th>
                                              <th>ID Product</th>
@@ -94,26 +94,26 @@
                                              <th>Giá</th>
                                              <th>Link IMG</th>
                                              <th class="option-heading">Tùy Chọn</th>
-                                             <th class="add-row-table">
+                                             <th class="add-row-table1">
                                                 Thêm
                                                 <i class="table-icon-add fa-solid fa-plus"></i>
                                            </th>
                                          </thead>
-                                         <tbody>
+                                         <tbody class="color">
                                              <?php 
                                                 if (isset($color)) {
                                                     for ($i = 0; $i < count($color); $i++) {
                                                         ?>
                                                        
                                              <tr>
-                                                 <td class="const"><?php echo $color[$i]['id'];?></td>
-                                                 <td class="has-edit const"><?php echo $color[$i]['product_id'];?></td>
-                                                 <td class="has-edit text"><?php echo $color[$i]['color'];?></td>
-                                                 <td class="has-edit const"><?php echo $color[$i]['sale_price_color']?></td>
-                                                 <td class="has-edit text"><?php echo $color[$i]['link_img'];?></td>
+                                                 <td class="const table1"><?php echo $color[$i]['id'];?></td>
+                                                 <td class="const table1"><?php echo $color[$i]['product_id'];?></td>
+                                                 <td class="has-edit text table1"><?php echo $color[$i]['color'];?></td>
+                                                 <td class="has-edit const table1"><?php echo $color[$i]['sale_price_color']?></td>
+                                                 <td class="has-edit text table1"><?php echo $color[$i]['link_img'];?></td>
                                                  
-                                                 <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                 <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
+                                                 <td class="btn-control edit-btn table1"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
+                                                 <td class="btn-control save-btn hidden table1"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
                                                  <td class="delete-product">
                                                      <a href="#" class="delete-product__link">Xóa</a>
                                                  </td>
@@ -130,7 +130,7 @@
                                  <!-- VERSION -->
                                  <div class="card-body table-full-width table-responsive">
                                      <div><h5>Các phiên bản</h5></h5></div>
-                                     <table class="table table-hover table-manage">
+                                     <table class="table table-hover table-manage table2">
                                          <thead>
                                              <th>ID</th>
                                              <th>ID Product</th>
@@ -138,26 +138,26 @@
                                              <th>Giá</th>
                                              <th>Version ID Product</th>
                                              <th class="option-heading">Tùy Chọn</th>
-                                             <th class="add-row-table">
+                                             <th class="add-row-table2">
                                                 Thêm
                                                 <i class="table-icon-add fa-solid fa-plus"></i>
                                            </th>
                                          </thead>
-                                         <tbody>
+                                         <tbody class="version">
                                              <?php 
                                                 if (isset($version)) {
                                                     for ($i = 0; $i < count($version); $i++) {
                                                         ?>
                                                        
                                              <tr>
-                                                 <td class="const"><?php echo $version[$i]['id'];?></td>
-                                                 <td class="has-edit const"><?php echo $version[$i]['product_id'];?></td>
-                                                 <td class="has-edit text"><?php echo $version[$i]['version'];?></td>
-                                                 <td class="has-edit const"><?php echo $version[$i]['price_version'];?></td>
-                                                 <td class="has-edit const"><?php echo $version[$i]['version_id'];?></td>
+                                                 <td class="const table2"><?php echo $version[$i]['id'];?></td>
+                                                 <td class="const table2"><?php echo $version[$i]['product_id'];?></td>
+                                                 <td class="has-edit text table2"><?php echo $version[$i]['version'];?></td>
+                                                 <td class="has-edit const table2"><?php echo $version[$i]['price_version'];?></td>
+                                                 <td class="has-edit const table2"><?php echo $version[$i]['version_id'];?></td>
                                                  
-                                                 <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                 <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
+                                                 <td class="btn-control edit-btn table2"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
+                                                 <td class="btn-control save-btn hidden table2"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
                                                  <td class="delete-product">
                                                      <a href="#" class="delete-product__link">Xóa</a>
                                                  </td>
@@ -175,32 +175,32 @@
 
                                  <div class="card-body table-full-width table-responsive">
                                      <div><h5>Thông số kỹ thuật</h5></h5></div>
-                                     <table class="table table-hover table-manage">
+                                     <table class="table table-hover table-manage table3">
                                          <thead>
                                              <th>ID</th>
                                              <th>ID Product</th>
                                              <th>Name</th>
                                              <th>Value</th>
                                              <th class="option-heading">Tùy Chọn</th>
-                                             <th class="add-row-table">
+                                             <th class="add-row-table3">
                                                 Thêm
                                                 <i class="table-icon-add fa-solid fa-plus"></i>
                                            </th>
                                          </thead>
-                                         <tbody>
+                                         <tbody class="info">
                                              <?php 
                                                 if (isset($info)) {
                                                     for ($i = 0; $i < count($info); $i++) {
                                                         ?>
                                                        
                                              <tr>
-                                                 <td class="const"><?php echo $info[$i]['id'];?></td>
-                                                 <td class="has-edit const"><?php echo $info[$i]['product_id'];?></td>
-                                                 <td class="has-edit text"><?php echo $info[$i]['name'];?></td>
-                                                 <td class="has-edit text"><?php echo $info[$i]['value'];?></td>
+                                                 <td class="const table3"><?php echo $info[$i]['id'];?></td>
+                                                 <td class="const table3"><?php echo $info[$i]['product_id'];?></td>
+                                                 <td class="has-edit text table3"><?php echo $info[$i]['name'];?></td>
+                                                 <td class="has-edit text table3"><?php echo $info[$i]['value'];?></td>
                                                  
-                                                 <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
-                                                 <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
+                                                 <td class="btn-control edit-btn table3"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
+                                                 <td class="btn-control save-btn hidden table3"><i class="table-icon fa-regular fa-floppy-disk"></i></td>
                                                  <td class="delete-product">
                                                      <a href="#" class="delete-product__link">Xóa</a>
                                                  </td>

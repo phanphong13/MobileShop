@@ -96,7 +96,7 @@
                                                 <i class="table-icon-add fa-solid fa-plus"></i>
                                            </th>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="account">
                                             <?php 
                                                 if (isset($result)) {
                                                     for ($i = 0; $i < count($result); $i++) {
@@ -105,7 +105,7 @@
                                                     <td class="const"><?php echo $result[$i]['id']?></td>
                                                     <td class="has-edit text"><?php echo $result[$i]['type']?></td>
                                                     <td class="has-edit text"><?php echo $result[$i]['name']?></td>
-                                                    <td class="has-edit text"><?php echo $result[$i]['email']?></td>
+                                                    <td class="text email"><?php echo $result[$i]['email']?></td>
                                                     <td class="has-edit text"><?php echo $result[$i]['password']?></td>
                                                     <td class="btn-control edit-btn"><i class="table-icon fa-regular fa-pen-to-square"></i></td>
                                                     <td class="btn-control save-btn hidden"><i class="table-icon fa-regular fa-floppy-disk"></i></td>

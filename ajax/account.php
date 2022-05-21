@@ -10,31 +10,27 @@
     if (!$type || !$name || !$email || !$password) {
         die("Vui lòng nhập đầy đủ thông tin"); 
     } else {
-        $sql = "SELECT * FROM `accounts` WHERE id = {$id} AND email = '$email'";
-        $result = $conn->query($sql, true);
-        if ($result === false) die("Failed");
-        if ($result === Null) {
-            $data = array(
-                'id' => $id,
-                'type' => $type,
-                'name' => $name,
-                'email' => $email,
-                'password' => $password,
-            );
-            if(!$conn->insert('accounts', $data))
-				die('Không thể thêm');
-            else die("Thêm tài khoản thành công");
+        if ($id > 0) {
+            $sql = "UPDATE `accounts` SET type = '$type', name = '$name', password = '$password' WHERE id = {$id} ;";
+            $conn->query($sql);
+            // die("Thay đổi thành công");    
         } else {
-            if ($email ===  $result[0]['email']) {
-                $sql = "UPDATE `accounts` SET type = '$type', name = '$name', password = '$password' WHERE id = {$id} ;";
-                $conn->query($sql);
-                die("Thay đổi thành công");
-            } else {
-                die("Không thể thay đổi email");
-               
-            }
-            
+            $sql = "SELECT * FROM `accounts` WHERE email = '$email'";
+            $result = $conn->query($sql, true);
+            if ($result === false) die("Failed");
+            if ($result === Null) {
+                $data = array(
+                    'type' => $type,
+                    'name' => $name,
+                    'email' => $email,
+                    'password' => $password,
+                );
+                if(!$conn->insert('accounts', $data))
+                    die('Không thể thêm');
+                // else die("Thêm tài khoản thành công");
+            } else die("Email này đã đăng kí rồi");   
         }
     }
+    
 
 ?>

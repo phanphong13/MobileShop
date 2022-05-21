@@ -207,6 +207,9 @@
                         <?php 
                           if (isset($color)) {
                             for ($i = 0; $i < count($color); $i++) { 
+                              if ($color[$i]['color'] === "Trống") {
+                                continue;
+                              } else {
                         ?>
                           <li class="col l-4 m-6 c-6 product__purchase-option-item">
                             <div color="<?php echo $color[$i]['color']; ?>" class="purchase-item purchase-item-color">
@@ -230,6 +233,7 @@
                         <?php 
                             }
                           }
+                          }
                         ?>
                         </ul>
 
@@ -242,6 +246,9 @@
                           <?php 
                             if (isset($version)) {
                               for ($i = 0; $i < count($version); $i++) {
+                                if ($version[$i]['version'] === "Trống") {
+                                  continue;
+                                } else {
                           ?>
                             <li class="col l-4 m-6 c-6 product__purchase-option-item">
                               <a href="?controller=product&id_product=<?php echo $version[$i]['version_id'] ?>" class = "product__purchase-option-item-link">
@@ -257,6 +264,7 @@
                             </li>
                           <?php
                               }
+                            }
                             }
                           ?>
                         </ul>
@@ -381,6 +389,9 @@
                       <?php 
                         if (isset($info)) {
                           for ($i = 0; $i < count($info); $i++) {
+                            if ($info[$i]['name'] === "Trống") {
+                              continue;
+                            } else {
                             if ($i % 2 == 0) {
                       ?>
                         <tr class="specifications__table-row table-row-odd">
@@ -398,6 +409,7 @@
                       <?php
                             }
                           }
+                        }
                         }
                       ?>
                       
