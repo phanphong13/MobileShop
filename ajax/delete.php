@@ -6,7 +6,7 @@
 				WHERE orders.id = {$_POST['id_order']}
 				";
 		if($conn->query($sql) === false){
-			$error = "Failed 6";
-			die($error);
+			die("Failed");
 		}
+	die("Xóa khỏi giỏ hàng thành công");
 ?>

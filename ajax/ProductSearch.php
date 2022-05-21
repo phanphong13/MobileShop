@@ -82,7 +82,7 @@
 									'.$result[$i]['name'].'
 								</span>
 							</a>
-							<div class="product__price"> '.number_format( $result[$i]['sale_price'],0,'',',').'đ </div>
+							<div class="product__price"> '.number_format( $result[$i]['price'],0,'',',').'đ </div>
 							<div class="product__price-sale">
 								<div>
 									'.number_format( $result[$i]['sale_price'],0,'',',').'đ
@@ -106,7 +106,7 @@
 								'.$result[$i]['name'].'
 							</span>
 						</a>
-						<div class="product__price"> '.number_format( $result[$i]['sale_price'],0,'',',').'đ </div>
+						<div class="product__price"> '.number_format( $result[$i]['price'],0,'',',').'đ </div>
 						<div class="product__price-sale">
 							<div>
 								'.number_format( $result[$i]['sale_price'],0,'',',').'đ

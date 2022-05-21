@@ -65,7 +65,7 @@
                     </div>
 
                     <button name="order" class="payment__btn">
-                        ĐẶT HÀNG
+                        THANH TOÁN
                     </button>
 
                 </form>
@@ -176,6 +176,7 @@
     ?>
 
     <script src="Assets/JS/main.js"></script>
+    <script src="Assets/JS/delete.js"></script>
     <script src="Assets/JS/validate.js"></script>
     <script>
         validator('#payment');

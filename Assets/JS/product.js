@@ -129,10 +129,12 @@ function orders(id_product) {
         },
         dataType : 'text',
         success: function(result){
-            alert("Thêm vào giỏ hàng thành công");
+            alert(result);
+            window.location.reload(true);
+
         },
         error : function(result) {
-            alert("Thêm vào giỏ hàng thất bại");      
+            alert("Gửi dữ liệu thất bại");      
         }
     })
 }

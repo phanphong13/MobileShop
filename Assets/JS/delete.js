@@ -8,7 +8,8 @@ function deleteOrder(id_order) {
         },
         dataType : 'text',
         success: function(result){
-            alert("Xóa khỏi giỏ hàng thành công");
+            alert(result);
+            // window.location.reload(true);
         },
         error : function(result) {
             alert("thất bại");      

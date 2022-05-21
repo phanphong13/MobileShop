@@ -22,7 +22,7 @@
                         </div>
 
                         <?php 
-                            if (isset($_SESSION['type']) && $_SESSION['type'] === 'Admin') {
+                            if (isset($_SESSION['type']) && ($_SESSION['type'] === 'Admin' || $_SESSION['type'] === 'admin')) {
                         ?>
                                 <span class="header__right-text">
                                     Admin
@@ -60,10 +60,10 @@
                             ?>
                             
 
-                            <span class="header__user-info--history">
+                            <a href="?controller=history&id_account=<?php echo $_SESSION['id_account']?>" class="header__user-info--history">
                                 <i class="fa-solid fa-clock-rotate-left"></i>
                                 Lịch sử mua hàng
-                            </span> 
+                            </a> 
 
                             <span class="header__user-info--resetPassword">
                                 <i class="fa-solid fa-key"></i>

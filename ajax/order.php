@@ -9,7 +9,7 @@
     $sql = "SELECT * FROM orders WHERE product_id = {$_POST['id_product']} AND account_id = {$_SESSION['id_account']} AND color = '$color'";
 	$res = $conn->query($sql, true);
 	if($res === false){
-		$result['error'] = "Failed order 1";
+		die("Failed order 1");
 		// die(json_encode($result));
 	}
     if($res === NULL){
@@ -30,7 +30,7 @@
 		);
 		$x = $conn->insert('orders', $data);
 		if($x === false){
-			$result['error'] = "Failed order 2";
+			die("Không thể thêm vào giỏ hàng");
 			// die(json_encode($result));
 		} 
 	} else {
@@ -41,5 +41,6 @@
 		$sql_order = "UPDATE `orders` SET num = '$num', price_total = '$price_total' WHERE id = {$res[0]['id']} ;";
 		$conn->query($sql_order);
 	} 
+	die("Thêm vào giỏ hàng thành công");
     // die(json_encode($result));
 ?>

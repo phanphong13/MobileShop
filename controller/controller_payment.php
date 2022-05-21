@@ -18,41 +18,45 @@
 					$address = $this->model->escape_string($_POST['address']);
 					$phoneNumber = $this->model->escape_string($_POST['phoneNumber']);
 					
-
-					
-					$data = array(
-						'account_id' => $_SESSION['id_account'],
-						'time' => date('Y-m-d H:i:s'),
-						'name' => $name,
-						'email' => $email,
-						'address' => $address,
-						'phone_number' => $phoneNumber,
-						'total_amount' => $sum,
-					);
-					$re = $this->model->insert('payments', $data);
-					if(!$re) {
-						die('Booking: Failed!');
-					} else {
-						for ($i = 0; $i < count($product_orders); $i++) {
-							$data = array(
-								'payment_id' => $re,
-								'name' => $product_orders[$i]['name'],
-								'num' => $product_orders[$i]['num'],
-								'color' => $product_orders[$i]['color'],
-								'link_img' => $product_orders[$i]['link_img'],
-								'price_color' => $product_orders[$i]['price_color'],
-								'price_total' => $product_orders[$i]['price_total'],
-							);
-							if (!$this->model->insert('payment_detail', $data)) 
-								die("Failed");
+					if ($sum > 0) {
+						$data = array(
+							'account_id' => $_SESSION['id_account'],
+							'time' => date('Y-m-d H:i:s'),
+							'name' => $name,
+							'email' => $email,
+							'address' => $address,
+							'phone_number' => $phoneNumber,
+							'total_amount' => $sum,
+						);
+						$re = $this->model->insert('payments', $data);
+						if(!$re) {
+							die('Booking: Failed!');
+						} else {
+							for ($i = 0; $i < count($product_orders); $i++) {
+								$data = array(
+									'payment_id' => $re,
+									'name' => $product_orders[$i]['name'],
+									'num' => $product_orders[$i]['num'],
+									'color' => $product_orders[$i]['color'],
+									'link_img' => $product_orders[$i]['link_img'],
+									'price_color' => $product_orders[$i]['price_color'],
+									'price_total' => $product_orders[$i]['price_total'],
+								);
+								if (!$this->model->insert('payment_detail', $data)) 
+									die("Failed");
+							}
 						}
-					}
+							
 						
+						header('Location: ?controller=success');
+						$order = $this->model->deleteOrder('orders', $_SESSION['id_account']);
+					} else {
+						echo "<script type='text/javascript'>alert('Không có sản phẩm nào trong giỏ hàng !');
+							window.location.replace('index.php?controller=payment');</script>";
+					}
 					
-					header('Location: ?controller=success');
-					$order = $this->model->deleteOrder('orders', $_SESSION['id_account']);
 				}
-			}
+			} 
 			
 			include "./view/payment.php";
         }
