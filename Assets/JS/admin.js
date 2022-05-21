@@ -11,6 +11,7 @@ for (let i = 0; i < tableTextList.length; i++) {
     tableTextList[i].style.cssText = `width: ${tableTextList[i].offsetWidth}px !important;`;
 }
 
+
 // control table
 let rowsTable = document.querySelectorAll('.table-manage tbody tr');
 let rowsTable1 = document.querySelectorAll('.table-manage.table1 tbody tr');

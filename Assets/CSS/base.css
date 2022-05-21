@@ -110,6 +110,7 @@ html {
 
 #backtop:hover {
     background-color: var(--priOpacity-color);
+    cursor: pointer;
 }
 
 /* box */

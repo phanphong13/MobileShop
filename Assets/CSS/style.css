@@ -8,6 +8,7 @@
     height: var(--header-height);
     background-image: linear-gradient(var(--primary-color), var(--priOpacity-color));
     display: flex;
+    overflow: hidden;
 }
 
 .header-wrapper {
@@ -1150,6 +1151,7 @@ input[name = "r"] {
 
 .payment__btn:hover {
     background-color: #931212;
+    cursor: pointer;
 }
 
 .payment__cart-header {
