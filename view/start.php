@@ -22,9 +22,9 @@
         <div id="header">
            <div class="header-wrapper">
                <div class="header__logo">
-                   <div class="header__logo-img">
+                   <a href="?controller=start" class="header__logo-img">
                         <img src="Assets/Img/Header/Logo/logo.png" alt="">
-                   </div>
+                    </a>
                </div>
 
                <div class="header__search">
