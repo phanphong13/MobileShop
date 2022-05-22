@@ -8,7 +8,6 @@
     height: var(--header-height);
     background-image: linear-gradient(var(--primary-color), var(--priOpacity-color));
     display: flex;
-    overflow: hidden;
 }
 
 .header-wrapper {
@@ -892,6 +891,7 @@ input[name = "r"] {
     display: flex;
     align-items: center;
     height: 100%;
+    cursor: pointer;
 }
 
 .gird__sidebar-list-item-input {
