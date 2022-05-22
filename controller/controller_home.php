@@ -16,7 +16,6 @@
 			// change password
 			if(isset($_POST['reset'])) { 
 				$password = $this->model->escape_string($_POST['password__old']);
-				echo $password;
 				$id = $_SESSION['id_account'];
 				// search email in database
 				$result = $this->model->query("select * from `accounts` where id = {$id};", true);
@@ -36,6 +35,10 @@
 							echo "<script type='text/javascript'>alert('$alert');
 							window.location.replace('index.php?controller=start');</script>";
 							// header("Location: index.php?controller=home");
+						} else {
+							$alert = "Nhập lại mật khẩu sai !";
+							echo "<script type='text/javascript'>alert('$alert');
+							window.location.replace('index.php?controller=home');</script>";
 						}
 					} else {
 						$alert = "Mật khẩu không chính xác";

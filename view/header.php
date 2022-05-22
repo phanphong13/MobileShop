@@ -49,7 +49,7 @@
                             </span>
                             
                             <?php 
-                                if (isset($_SESSION['type']) && $_SESSION['type'] === 'Admin') {
+                                if (isset($_SESSION['type']) && ($_SESSION['type'] === 'Admin' || $_SESSION['type'] === 'admin')) {
                                     ?>
                             <a href="?controller=user" class="header__user-info--setting">
                                 <i class="fa-solid fa-gear"></i>
