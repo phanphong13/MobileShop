@@ -2,10 +2,13 @@
 
 var userInfoBtn = document.querySelector('.header__user');
 var userInfo = document.querySelector('.header__user-info');
+var btnCart = document.querySelector('.header__cart');
+var cartList = document.querySelector('.header__cart-products');
 
 if (userInfoBtn) {
     userInfoBtn.addEventListener('click', function() {
         userInfo.classList.toggle("display");
+        cartList.classList.remove("display");
     })
 
     userInfo.addEventListener('click', function(event) {
@@ -14,12 +17,11 @@ if (userInfoBtn) {
 }
 // mo CartList
 
-var btnCart = document.querySelector('.header__cart');
-var cartList = document.querySelector('.header__cart-products');
 
 if (btnCart) {
     btnCart.addEventListener('click', function() {
         cartList.classList.toggle("display");
+        userInfo.classList.remove("display");
     })
 
     cartList.addEventListener('click', function(event) {
