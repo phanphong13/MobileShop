@@ -1,4 +1,12 @@
 # MobileShop
+- Phan Văn Phong - 20020460
+- Trần Văn Mạnh - 20020442
+- Lương Thế Hùng - 20020415
+- Nguyễn Công Khải - 20020425
+- Đặng Trung Kiên - 20020427
+
+## Link Slide
+https://docs.google.com/presentation/d/1AzRyZTvbk1QCoI2DA-GyotWP7YEk61lK/edit?fbclid=IwAR3-7UX1Q3ApGcnt5btaCPSaWWX_fDXGLif5QOFxYk5d92JJBmfKZjADMr0#slide=id.p1
 
 ## Introduce project ##
 
