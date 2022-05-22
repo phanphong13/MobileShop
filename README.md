@@ -1,6 +1,5 @@
 # MobileShop
 
-
 ## Introduce project ##
 
 - Language: PHP, HTML, CSS, JavaScript, jQuery
